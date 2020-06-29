@@ -1,2 +1,2 @@
-# snowbridge-nft
-An archive of the ERC721 contracts, pallets and tests.
+# polkadot-ethereum
+Components for a Polkadot Ethereum Bridge
