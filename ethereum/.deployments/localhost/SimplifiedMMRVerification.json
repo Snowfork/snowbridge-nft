@@ -1,0 +1,81 @@
+{
+  "address": "0xEDa338E4dC46038493b885327842fD3E301CaB39",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "root",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "leafNodeHash",
+          "type": "bytes32"
+        },
+        {
+          "components": [
+            {
+              "internalType": "bytes32[]",
+              "name": "merkleProofItems",
+              "type": "bytes32[]"
+            },
+            {
+              "internalType": "uint64",
+              "name": "merkleProofOrderBitField",
+              "type": "uint64"
+            }
+          ],
+          "internalType": "struct SimplifiedMMRProof",
+          "name": "proof",
+          "type": "tuple"
+        }
+      ],
+      "name": "verifyInclusionProof",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x803fab0dac862eb0533a90e8bafbffcf5bfe8ef1a36eaffc4b2f3834737477fa",
+  "receipt": {
+    "to": null,
+    "from": "0xBe68fC2d8249eb60bfCf0e71D5A0d2F2e292c4eD",
+    "contractAddress": "0xEDa338E4dC46038493b885327842fD3E301CaB39",
+    "transactionIndex": 0,
+    "gasUsed": "242768",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xa750106599b948f671e0b65212e6fa4f06e3f103f1f0e7c8777901c9fd93a8c8",
+    "transactionHash": "0x803fab0dac862eb0533a90e8bafbffcf5bfe8ef1a36eaffc4b2f3834737477fa",
+    "logs": [],
+    "blockNumber": 11,
+    "cumulativeGasUsed": "242768",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "4c5f7479fbcbb8f587221b3596eb14de",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"root\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"leafNodeHash\",\"type\":\"bytes32\"},{\"components\":[{\"internalType\":\"bytes32[]\",\"name\":\"merkleProofItems\",\"type\":\"bytes32[]\"},{\"internalType\":\"uint64\",\"name\":\"merkleProofOrderBitField\",\"type\":\"uint64\"}],\"internalType\":\"struct SimplifiedMMRProof\",\"name\":\"proof\",\"type\":\"tuple\"}],\"name\":\"verifyInclusionProof\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@snowfork/snowbridge-contracts/contracts/SimplifiedMMRVerification.sol\":\"SimplifiedMMRVerification\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@snowfork/snowbridge-contracts/contracts/SimplifiedMMRVerification.sol\":{\"content\":\"// \\\"SPDX-License-Identifier: UNLICENSED\\\"\\npragma solidity ^0.8.5;\\n\\nstruct SimplifiedMMRProof {\\n    bytes32[] merkleProofItems;\\n    uint64 merkleProofOrderBitField;\\n}\\n\\ncontract  SimplifiedMMRVerification {\\n    function verifyInclusionProof(\\n        bytes32 root,\\n        bytes32 leafNodeHash,\\n        SimplifiedMMRProof memory proof\\n    ) public pure returns (bool) {\\n        require(proof.merkleProofItems.length < 64);\\n\\n        return root == calculateMerkleRoot(leafNodeHash, proof.merkleProofItems, proof.merkleProofOrderBitField);\\n    }\\n\\n    // Get the value of the bit at the given 'index' in 'self'.\\n    // index should be validated beforehand to make sure it is less than 64\\n    function bit(uint64 self, uint index) internal pure returns (bool) {\\n        if (uint8(self >> index & 1) == 1) {\\n            return true;\\n        } else {\\n            return false;\\n        }\\n    }\\n\\n    function calculateMerkleRoot(\\n        bytes32 leafNodeHash,\\n        bytes32[] memory merkleProofItems,\\n        uint64 merkleProofOrderBitField\\n    ) internal pure returns (bytes32) {\\n        bytes32 currentHash = leafNodeHash;\\n\\n        for (uint currentPosition = 0; currentPosition < merkleProofItems.length; currentPosition++) {\\n            bool isSiblingLeft = bit(merkleProofOrderBitField, currentPosition);\\n            bytes32 sibling = merkleProofItems[currentPosition];\\n\\n            if (isSiblingLeft) {\\n                currentHash = keccak256(\\n                    abi.encodePacked(sibling, currentHash)\\n                );\\n            } else {\\n                currentHash = keccak256(\\n                    abi.encodePacked(currentHash, sibling)\\n                );\\n            }\\n        }\\n\\n        return currentHash;\\n    }\\n}\\n\",\"keccak256\":\"0xdb3259cc2f8e2ff32507a480f2ea9d3801cf3fc828ea0330bdff2a17be2b9353\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061036e806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80634ced8da414610030575b600080fd5b61004361003e36600461018c565b610057565b604051901515815260200160405180910390f35b600060408260000151511061006b57600080fd5b61007e8383600001518460200151610088565b9093149392505050565b600083815b845181101561013b5760006100a28583610144565b905060008683815181106100b8576100b861030c565b6020026020010151905081156100f9576040805160208101839052908101859052606001604051602081830303815290604052805190602001209350610126565b60408051602081018690529081018290526060016040516020818303038152906040528051906020012093505b50508080610133906102e3565b91505061008d565b50949350505050565b6000600167ffffffffffffffff8416831c8116141561016557506001610169565b5060005b92915050565b803567ffffffffffffffff8116811461018757600080fd5b919050565b6000806000606084860312156101a157600080fd5b833592506020808501359250604085013567ffffffffffffffff808211156101c857600080fd5b90860190604082890312156101dc57600080fd5b6101e4610289565b8235828111156101f357600080fd5b8301601f81018a1361020457600080fd5b80358381111561021657610216610322565b8060051b93506102278685016102b2565b8181528681019083880186850189018e101561024257600080fd5b600096505b83871015610265578035835260019690960195918801918801610247565b5084525061027791505083850161016f565b84820152809450505050509250925092565b6040805190810167ffffffffffffffff811182821017156102ac576102ac610322565b60405290565b604051601f8201601f1916810167ffffffffffffffff811182821017156102db576102db610322565b604052919050565b600060001982141561030557634e487b7160e01b600052601160045260246000fd5b5060010190565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052604160045260246000fdfea264697066735822122090584e7a15a6b37194997b9540c3c15134f2501d5de26499a1a3c8e9357dd1d164736f6c63430008060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80634ced8da414610030575b600080fd5b61004361003e36600461018c565b610057565b604051901515815260200160405180910390f35b600060408260000151511061006b57600080fd5b61007e8383600001518460200151610088565b9093149392505050565b600083815b845181101561013b5760006100a28583610144565b905060008683815181106100b8576100b861030c565b6020026020010151905081156100f9576040805160208101839052908101859052606001604051602081830303815290604052805190602001209350610126565b60408051602081018690529081018290526060016040516020818303038152906040528051906020012093505b50508080610133906102e3565b91505061008d565b50949350505050565b6000600167ffffffffffffffff8416831c8116141561016557506001610169565b5060005b92915050565b803567ffffffffffffffff8116811461018757600080fd5b919050565b6000806000606084860312156101a157600080fd5b833592506020808501359250604085013567ffffffffffffffff808211156101c857600080fd5b90860190604082890312156101dc57600080fd5b6101e4610289565b8235828111156101f357600080fd5b8301601f81018a1361020457600080fd5b80358381111561021657610216610322565b8060051b93506102278685016102b2565b8181528681019083880186850189018e101561024257600080fd5b600096505b83871015610265578035835260019690960195918801918801610247565b5084525061027791505083850161016f565b84820152809450505050509250925092565b6040805190810167ffffffffffffffff811182821017156102ac576102ac610322565b60405290565b604051601f8201601f1916810167ffffffffffffffff811182821017156102db576102db610322565b604052919050565b600060001982141561030557634e487b7160e01b600052601160045260246000fd5b5060010190565b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052604160045260246000fdfea264697066735822122090584e7a15a6b37194997b9540c3c15134f2501d5de26499a1a3c8e9357dd1d164736f6c63430008060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

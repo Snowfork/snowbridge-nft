@@ -1,18 +1,25 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.6.2;
+pragma solidity >=0.6.2;
 
 contract Verifier {
 
-    function recover(bytes32 _message, bytes memory _signature)
-        public
-        pure
-        returns (address)
-    {
-        return verify(ethMessageHash(_message), _signature);
+    address public operator;
+
+    constructor(address _operator) public {
+        operator = _operator;
     }
 
-    /**
-     * @dev Recover signer address from a message by using their signature
+    function recover(bytes32 _message, bytes memory _signature)
+        public
+        view
+        returns (bool)
+    {
+        address signer = verify(_message, _signature);
+        return operator == signer;
+    }
+
+  /**
+     * @dev Verify checks if the signer's address matches the operator's address
      */
     function verify(bytes32 h, bytes memory signature)
         internal
@@ -50,15 +57,5 @@ contract Verifier {
             // solium-disable-next-line arg-overflow
             return ecrecover(h, v, r, s);
         }
-    }
-
-    /**
-    * @dev prefix a bytes32 value with "\x19Ethereum Signed Message:" and hash the result
-    */
-    function ethMessageHash(bytes32 message) internal pure returns (bytes32) {
-        return
-            keccak256(
-                abi.encodePacked("\x19Ethereum Signed Message:\n32", message)
-            );
     }
 }

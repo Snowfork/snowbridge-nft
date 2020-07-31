@@ -1,0 +1,154 @@
+{
+  "address": "0x86D9aC0Bab011917f57B9E9607833b4340F9D4F8",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "input",
+          "type": "uint128"
+        }
+      ],
+      "name": "encode128",
+      "outputs": [
+        {
+          "internalType": "bytes16",
+          "name": "",
+          "type": "bytes16"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint16",
+          "name": "input",
+          "type": "uint16"
+        }
+      ],
+      "name": "encode16",
+      "outputs": [
+        {
+          "internalType": "bytes2",
+          "name": "",
+          "type": "bytes2"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "encode256",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "input",
+          "type": "uint32"
+        }
+      ],
+      "name": "encode32",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "input",
+          "type": "uint64"
+        }
+      ],
+      "name": "encode64",
+      "outputs": [
+        {
+          "internalType": "bytes8",
+          "name": "",
+          "type": "bytes8"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "input",
+          "type": "uint8"
+        }
+      ],
+      "name": "encode8",
+      "outputs": [
+        {
+          "internalType": "bytes1",
+          "name": "",
+          "type": "bytes1"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x79c903494c01c0a0074d99874f7ca2ed01a01aa644f3eb007323659c54c56ded",
+  "receipt": {
+    "to": null,
+    "from": "0xBe68fC2d8249eb60bfCf0e71D5A0d2F2e292c4eD",
+    "contractAddress": "0x86D9aC0Bab011917f57B9E9607833b4340F9D4F8",
+    "transactionIndex": 0,
+    "gasUsed": "335959",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x33b601719141985b9672d68cec9b3c9caef5d05ddd50e9effe16df1611385e61",
+    "transactionHash": "0x79c903494c01c0a0074d99874f7ca2ed01a01aa644f3eb007323659c54c56ded",
+    "logs": [],
+    "blockNumber": 1,
+    "cumulativeGasUsed": "335959",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "4c5f7479fbcbb8f587221b3596eb14de",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint128\",\"name\":\"input\",\"type\":\"uint128\"}],\"name\":\"encode128\",\"outputs\":[{\"internalType\":\"bytes16\",\"name\":\"\",\"type\":\"bytes16\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint16\",\"name\":\"input\",\"type\":\"uint16\"}],\"name\":\"encode16\",\"outputs\":[{\"internalType\":\"bytes2\",\"name\":\"\",\"type\":\"bytes2\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"input\",\"type\":\"uint256\"}],\"name\":\"encode256\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"input\",\"type\":\"uint32\"}],\"name\":\"encode32\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"input\",\"type\":\"uint64\"}],\"name\":\"encode64\",\"outputs\":[{\"internalType\":\"bytes8\",\"name\":\"\",\"type\":\"bytes8\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"input\",\"type\":\"uint8\"}],\"name\":\"encode8\",\"outputs\":[{\"internalType\":\"bytes1\",\"name\":\"\",\"type\":\"bytes1\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@snowfork/snowbridge-contracts/contracts/ScaleCodec.sol\":\"ScaleCodec\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@snowfork/snowbridge-contracts/contracts/ScaleCodec.sol\":{\"content\":\"// SPDX-License-Identifier: Apache-2.0\\npragma solidity >=0.7.6;\\n\\nlibrary ScaleCodec {\\n\\n    // Sources:\\n    //   * https://ethereum.stackexchange.com/questions/15350/how-to-convert-an-bytes-to-address-in-solidity/50528\\n    //   * https://graphics.stanford.edu/~seander/bithacks.html#ReverseParallel\\n\\n    function reverse256(uint256 input) internal pure returns (uint256 v) {\\n        v = input;\\n\\n        // swap bytes\\n        v = ((v & 0xFF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00) >> 8) |\\n            ((v & 0x00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF00FF) << 8);\\n\\n        // swap 2-byte long pairs\\n        v = ((v & 0xFFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000) >> 16) |\\n            ((v & 0x0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF) << 16);\\n\\n        // swap 4-byte long pairs\\n        v = ((v & 0xFFFFFFFF00000000FFFFFFFF00000000FFFFFFFF00000000FFFFFFFF00000000) >> 32) |\\n            ((v & 0x00000000FFFFFFFF00000000FFFFFFFF00000000FFFFFFFF00000000FFFFFFFF) << 32);\\n\\n        // swap 8-byte long pairs\\n        v = ((v & 0xFFFFFFFFFFFFFFFF0000000000000000FFFFFFFFFFFFFFFF0000000000000000) >> 64) |\\n            ((v & 0x0000000000000000FFFFFFFFFFFFFFFF0000000000000000FFFFFFFFFFFFFFFF) << 64);\\n\\n        // swap 16-byte long pairs\\n        v = (v >> 128) | (v << 128);\\n    }\\n\\n    function reverse128(uint128 input) internal pure returns (uint128 v) {\\n        v = input;\\n\\n        // swap bytes\\n        v = ((v & 0xFF00FF00FF00FF00FF00FF00FF00FF00) >> 8) |\\n            ((v & 0x00FF00FF00FF00FF00FF00FF00FF00FF) << 8);\\n\\n        // swap 2-byte long pairs\\n        v = ((v & 0xFFFF0000FFFF0000FFFF0000FFFF0000) >> 16) |\\n            ((v & 0x0000FFFF0000FFFF0000FFFF0000FFFF) << 16);\\n\\n        // swap 4-byte long pairs\\n        v = ((v & 0xFFFFFFFF00000000FFFFFFFF00000000) >> 32) |\\n            ((v & 0x00000000FFFFFFFF00000000FFFFFFFF) << 32);\\n\\n        // swap 8-byte long pairs\\n        v = (v >> 64) | (v << 64);\\n    }\\n\\n    function reverse64(uint64 input) internal pure returns (uint64 v) {\\n        v = input;\\n\\n        // swap bytes\\n        v = ((v & 0xFF00FF00FF00FF00) >> 8) |\\n            ((v & 0x00FF00FF00FF00FF) << 8);\\n\\n        // swap 2-byte long pairs\\n        v = ((v & 0xFFFF0000FFFF0000) >> 16) |\\n            ((v & 0x0000FFFF0000FFFF) << 16);\\n\\n        // swap 4-byte long pairs\\n        v = (v >> 32) | (v << 32);\\n    }\\n\\n    function reverse32(uint32 input) internal pure returns (uint32 v) {\\n        v = input;\\n\\n        // swap bytes\\n        v = ((v & 0xFF00FF00) >> 8) |\\n            ((v & 0x00FF00FF) << 8);\\n\\n        // swap 2-byte long pairs\\n        v = (v >> 16) | (v << 16);\\n    }\\n\\n    function reverse16(uint16 input) internal pure returns (uint16 v) {\\n        v = input;\\n\\n        // swap bytes\\n        v = (v >> 8) | (v << 8);\\n    }\\n\\n    function encode256(uint256 input) public pure returns (bytes32) {\\n        return bytes32(reverse256(input));\\n    }\\n\\n    function encode128(uint128 input) public pure returns (bytes16) {\\n        return bytes16(reverse128(input));\\n    }\\n\\n    function encode64(uint64 input) public pure returns (bytes8) {\\n        return bytes8(reverse64(input));\\n    }\\n\\n    function encode32(uint32 input) public pure returns (bytes4) {\\n        return bytes4(reverse32(input));\\n    }\\n\\n    function encode16(uint16 input) public pure returns (bytes2) {\\n        return bytes2(reverse16(input));\\n    }\\n\\n    function encode8(uint8 input) public pure returns (bytes1) {\\n        return bytes1(input);\\n    }\\n}\\n\",\"keccak256\":\"0x155f967fb8badeb5eadfde5255c55911e18e6886174bf81afb15df2fbb9fdb62\",\"license\":\"Apache-2.0\"}},\"version\":1}",
+  "bytecode": "0x61052661003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361061006c5760003560e01c80631553ce4314610071578063381f760d146100ba57806353fae674146101085780638dedf6ee14610135578063dfd47e0e14610204578063f83d7d5f14610225575b600080fd5b61009c61007f366004610440565b6000600882811b62ffff00169083901c60ff161760f01b92915050565b6040516001600160f01b031990911681526020015b60405180910390f35b6100ef6100c836600461047d565b600881811c62ff00ff1663ff00ff009290911b9190911617601081811c91901b1760e01b90565b6040516001600160e01b031990911681526020016100b1565b61011c6101163660046104cd565b60f81b90565b6040516001600160f81b031990911681526020016100b1565b6101e2610143366004610407565b6eff000000ff000000ff000000ff0000600882811c9182166fff000000ff000000ff000000ff0000009390911b92831617601090811c6cff000000ff000000ff000000ff929092166dff000000ff000000ff000000ff00939093169290921790911b17602081811c6bffffffff00000000ffffffff166fffffffff00000000ffffffff000000009290911b9190911617604081811c91901b1760801b90565b6040516fffffffffffffffffffffffffffffffff1990911681526020016100b1565b610217610212366004610464565b6102b6565b6040519081526020016100b1565b61029d6102333660046104a3565b600065ff000000ff00600883811b91821664ff000000ff9185901c91821617601090811b67ff000000ff0000009390931666ff000000ff00009290921691909117901c17602081811b6bffffffffffffffff000000001691901c63ffffffff161760c01b92915050565b6040516001600160c01b031990911681526020016100b1565b60006104018260008190506008817eff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff16901b6008827fff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff0016901c1790506010817dffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff16901b6010827fffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff000016901c1790506020817bffffffff00000000ffffffff00000000ffffffff00000000ffffffff16901b6020827fffffffff00000000ffffffff00000000ffffffff00000000ffffffff0000000016901c17905060408177ffffffffffffffff0000000000000000ffffffffffffffff16901b60408277ffffffffffffffff0000000000000000ffffffffffffffff1916901c179050608081901b608082901c179050919050565b92915050565b60006020828403121561041957600080fd5b81356fffffffffffffffffffffffffffffffff8116811461043957600080fd5b9392505050565b60006020828403121561045257600080fd5b813561ffff8116811461043957600080fd5b60006020828403121561047657600080fd5b5035919050565b60006020828403121561048f57600080fd5b813563ffffffff8116811461043957600080fd5b6000602082840312156104b557600080fd5b813567ffffffffffffffff8116811461043957600080fd5b6000602082840312156104df57600080fd5b813560ff8116811461043957600080fdfea2646970667358221220de99358e70d3387ec0b665a443109a9881e11cf318b5b255c239c8b303349fb164736f6c63430008060033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361061006c5760003560e01c80631553ce4314610071578063381f760d146100ba57806353fae674146101085780638dedf6ee14610135578063dfd47e0e14610204578063f83d7d5f14610225575b600080fd5b61009c61007f366004610440565b6000600882811b62ffff00169083901c60ff161760f01b92915050565b6040516001600160f01b031990911681526020015b60405180910390f35b6100ef6100c836600461047d565b600881811c62ff00ff1663ff00ff009290911b9190911617601081811c91901b1760e01b90565b6040516001600160e01b031990911681526020016100b1565b61011c6101163660046104cd565b60f81b90565b6040516001600160f81b031990911681526020016100b1565b6101e2610143366004610407565b6eff000000ff000000ff000000ff0000600882811c9182166fff000000ff000000ff000000ff0000009390911b92831617601090811c6cff000000ff000000ff000000ff929092166dff000000ff000000ff000000ff00939093169290921790911b17602081811c6bffffffff00000000ffffffff166fffffffff00000000ffffffff000000009290911b9190911617604081811c91901b1760801b90565b6040516fffffffffffffffffffffffffffffffff1990911681526020016100b1565b610217610212366004610464565b6102b6565b6040519081526020016100b1565b61029d6102333660046104a3565b600065ff000000ff00600883811b91821664ff000000ff9185901c91821617601090811b67ff000000ff0000009390931666ff000000ff00009290921691909117901c17602081811b6bffffffffffffffff000000001691901c63ffffffff161760c01b92915050565b6040516001600160c01b031990911681526020016100b1565b60006104018260008190506008817eff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff16901b6008827fff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff0016901c1790506010817dffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff16901b6010827fffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff000016901c1790506020817bffffffff00000000ffffffff00000000ffffffff00000000ffffffff16901b6020827fffffffff00000000ffffffff00000000ffffffff00000000ffffffff0000000016901c17905060408177ffffffffffffffff0000000000000000ffffffffffffffff16901b60408277ffffffffffffffff0000000000000000ffffffffffffffff1916901c179050608081901b608082901c179050919050565b92915050565b60006020828403121561041957600080fd5b81356fffffffffffffffffffffffffffffffff8116811461043957600080fd5b9392505050565b60006020828403121561045257600080fd5b813561ffff8116811461043957600080fd5b60006020828403121561047657600080fd5b5035919050565b60006020828403121561048f57600080fd5b813563ffffffff8116811461043957600080fd5b6000602082840312156104b557600080fd5b813567ffffffffffffffff8116811461043957600080fd5b6000602082840312156104df57600080fd5b813560ff8116811461043957600080fdfea2646970667358221220de99358e70d3387ec0b665a443109a9881e11cf318b5b255c239c8b303349fb164736f6c63430008060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

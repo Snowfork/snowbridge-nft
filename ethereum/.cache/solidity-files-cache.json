@@ -1,0 +1,2042 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/alistair/snowbridge-nft/ethereum/contracts/ERC721App.sol": {
+      "lastModificationDate": 1650404241499,
+      "contentHash": "cdcdee9ce5030b3c0b15877d92c2cd3a",
+      "sourceName": "contracts/ERC721App.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+        "@snowfork/snowbridge-contracts/contracts/ScaleCodec.sol",
+        "@snowfork/snowbridge-contracts/contracts/OutboundChannel.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "ERC721App"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1650399632870,
+      "contentHash": "c89562e4f5ef9b584f318a1559b5052a",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl",
+        "IAccessControl"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1650399652638,
+      "contentHash": "75cedcb24edaec014d2071ed59a03ff3",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/ScaleCodec.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "a0afada673b887dbdf67e02812f2c339",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/ScaleCodec.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "ScaleCodec"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/OutboundChannel.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "bcf1690516fd17e8c7419e1777d53deb",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/OutboundChannel.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "OutboundChannel"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1650399632922,
+      "contentHash": "bc047f55d4e6dcc5a9c7ee096f530312",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1650399632922,
+      "contentHash": "e575d915a7dbf0decd510699a7fd53dc",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1650399647090,
+      "contentHash": "a9a5319dff9088c6ffe757ea1c2a6729",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1650399647094,
+      "contentHash": "9a04322bb8f6b8f2767d8358d1d2537b",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1650399647014,
+      "contentHash": "93a5aa8a276e028a4f46f22b5d8f7bd3",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/contracts/test/MockOutboundChannel.sol": {
+      "lastModificationDate": 1650404241499,
+      "contentHash": "da460475d2081791a807df5f15e156eb",
+      "sourceName": "contracts/test/MockOutboundChannel.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@snowfork/snowbridge-contracts/contracts/OutboundChannel.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "MockOutboundChannel"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1650399647014,
+      "contentHash": "8fc7506d6ee32c5fbc527b0c42f0e615",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1650399647014,
+      "contentHash": "e6d69a0b5b95ac1112eb4746a2d66f3e",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1650399632922,
+      "contentHash": "37103cdc416efc2601c6f6734044b559",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1650399652638,
+      "contentHash": "11629722b0e3c53cb55733af5176cd33",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1650399652638,
+      "contentHash": "f2ae82a09cc670ca19d644f60990b94d",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/contracts/test/TestToken721Enumerable.sol": {
+      "lastModificationDate": 1650403809625,
+      "contentHash": "0f99aca471950ec38b2fd31aa114d08a",
+      "sourceName": "contracts/test/TestToken721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "TestToken721Enumerable"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1650399652638,
+      "contentHash": "2b16122c5f36625084a7f90f0780937b",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorage"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/contracts/test/TestToken721.sol": {
+      "lastModificationDate": 1650403809625,
+      "contentHash": "51f97c8abbbc6ed62e993aaa5529bbe6",
+      "sourceName": "contracts/test/TestToken721.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "TestToken721"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/utils/MerkleProof.sol": {
+      "lastModificationDate": 1650402732534,
+      "contentHash": "00b965b49834149f5f69a82200a000f8",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/utils/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/utils/Bitfield.sol": {
+      "lastModificationDate": 1650402732534,
+      "contentHash": "c2e2cde768ff1737324abf26617a1ed4",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/utils/Bitfield.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Bits.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "Bitfield"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/utils/Bits.sol": {
+      "lastModificationDate": 1650402732534,
+      "contentHash": "586d706cf0a65659992d20cb4a2607e5",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/utils/Bits.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "Bits"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/BeefyLightClient.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "9df8be97b459a9a908393ff244804875",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/BeefyLightClient.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+        "./utils/Bits.sol",
+        "./utils/Bitfield.sol",
+        "./ValidatorRegistry.sol",
+        "./SimplifiedMMRVerification.sol",
+        "./ScaleCodec.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "BeefyLightClient"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1650399647090,
+      "contentHash": "fab61daafd8fd6090c7d648a6bf7e6e5",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "42c7922b6e3d6e01a7e0cb85d485e38b",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./utils/MerkleProof.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "ValidatorRegistry"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/SimplifiedMMRVerification.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "b56f5118598b0903cd204497766fdbcb",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/SimplifiedMMRVerification.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "SimplifiedMMRVerification"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1650399632870,
+      "contentHash": "17d9f40220b0ab370db2c77e7c92c4ef",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/ParachainLightClient.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "5ef77be430839e1670da9d11547f929a",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/ParachainLightClient.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./BeefyLightClient.sol",
+        "./utils/MerkleProof.sol",
+        "./ScaleCodec.sol",
+        "./SimplifiedMMRVerification.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "ParachainLightClient"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/BasicInboundChannel.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "fe0bbb868ffc7f74022d64d19cfd9ccb",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/BasicInboundChannel.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ParachainLightClient.sol",
+        "./BeefyLightClient.sol",
+        "./SimplifiedMMRVerification.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "BasicInboundChannel"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/IncentivizedInboundChannel.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "1064ccda7cc3acc00ea4e72904cc34a7",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/IncentivizedInboundChannel.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "./ParachainLightClient.sol",
+        "./RewardSource.sol",
+        "./SimplifiedMMRVerification.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "IncentivizedInboundChannel"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/RewardSource.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "f12934d7211eb795062f6b1525a7802d",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/RewardSource.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "RewardSource"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/IncentivizedOutboundChannel.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "1882e0550159d5fff3a0e8ba54bb796c",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/IncentivizedOutboundChannel.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "./OutboundChannel.sol",
+        "./ChannelAccess.sol",
+        "./FeeSource.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "IncentivizedOutboundChannel"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/ChannelAccess.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "675a885283e8fcda69a71736618d1ec4",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/ChannelAccess.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "ChannelAccess"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/FeeSource.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "060078ce33501367945651c08a185101",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/FeeSource.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "FeeSource"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/BasicOutboundChannel.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "de91316fb01b1eb85ca613185d5a6b52",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/BasicOutboundChannel.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "./ChannelAccess.sol",
+        "./OutboundChannel.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "BasicOutboundChannel"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/ETHApp.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "801a289ce1b6862e2f68e6168b6ba14c",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/ETHApp.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "./RewardSource.sol",
+        "./ScaleCodec.sol",
+        "./OutboundChannel.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "ETHApp"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1650399647094,
+      "contentHash": "b81f7c2aa371ec13481560a9b63701f9",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/DOTApp.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "4c2de3195717fdc4e2b2c4530257a5b9",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/DOTApp.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "./WrappedToken.sol",
+        "./ScaleCodec.sol",
+        "./OutboundChannel.sol",
+        "./FeeSource.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": [
+        "DOTApp"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@snowfork/snowbridge-contracts/contracts/WrappedToken.sol": {
+      "lastModificationDate": 1650402732494,
+      "contentHash": "05c09a07cceac47b883108e55f27dcb8",
+      "sourceName": "@snowfork/snowbridge-contracts/contracts/WrappedToken.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC777/ERC777.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.5"
+      ],
+      "artifacts": [
+        "WrappedToken"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1650399647090,
+      "contentHash": "4efbb69894abae8fcf57c9d342dab35d",
+      "sourceName": "@openzeppelin/contracts/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../ERC20/IERC20.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1650399647090,
+      "contentHash": "b5a217ad2af8ed08108788678245eb0e",
+      "sourceName": "@openzeppelin/contracts/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1650399647090,
+      "contentHash": "28db9244cc847ef290e8ca4576cd920e",
+      "sourceName": "@openzeppelin/contracts/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1650399647090,
+      "contentHash": "c8c3e65073fcb27e64313d3fba227f71",
+      "sourceName": "@openzeppelin/contracts/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1650399647014,
+      "contentHash": "c7492a9ab60ba083d345f893d5e0f33c",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/node_modules/@openzeppelin/contracts/utils/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1650399647094,
+      "contentHash": "025ff2ecea94e30a6f2ea7d5ef8fb7d3",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/home/alistair/snowbridge-nft/ethereum/contracts/Imports.sol": {
+      "lastModificationDate": 1650405362607,
+      "contentHash": "f6632940f93aa168a16c05beb76a5457",
+      "sourceName": "contracts/Imports.sol",
+      "solcConfig": {
+        "version": "0.8.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@snowfork/snowbridge-contracts/contracts/utils/MerkleProof.sol",
+        "@snowfork/snowbridge-contracts/contracts/utils/Bitfield.sol",
+        "@snowfork/snowbridge-contracts/contracts/ParachainLightClient.sol",
+        "@snowfork/snowbridge-contracts/contracts/BasicInboundChannel.sol",
+        "@snowfork/snowbridge-contracts/contracts/IncentivizedInboundChannel.sol",
+        "@snowfork/snowbridge-contracts/contracts/BasicOutboundChannel.sol",
+        "@snowfork/snowbridge-contracts/contracts/IncentivizedOutboundChannel.sol",
+        "@snowfork/snowbridge-contracts/contracts/ETHApp.sol",
+        "@snowfork/snowbridge-contracts/contracts/DOTApp.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.5"
+      ],
+      "artifacts": []
+    }
+  }
+}

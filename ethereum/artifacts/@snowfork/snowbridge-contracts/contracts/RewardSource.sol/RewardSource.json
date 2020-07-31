@@ -1,0 +1,29 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "RewardSource",
+  "sourceName": "@snowfork/snowbridge-contracts/contracts/RewardSource.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "feePayer",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "reward",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
