@@ -2,7 +2,7 @@
 pragma solidity >=0.7.6;
 pragma experimental ABIEncoderV2;
 
-import "../OutboundChannel.sol";
+import "@snowfork/snowbridge-contracts/contracts/OutboundChannel.sol";
 
 contract MockOutboundChannel is OutboundChannel {
     event Message(address source, bytes data);

@@ -4,8 +4,8 @@ pragma experimental ABIEncoderV2;
 
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
-import "./ScaleCodec.sol";
-import "./OutboundChannel.sol";
+import "@snowfork/snowbridge-contracts/contracts/ScaleCodec.sol";
+import "@snowfork/snowbridge-contracts/contracts/OutboundChannel.sol";
 
 enum ChannelId {
     Basic,
