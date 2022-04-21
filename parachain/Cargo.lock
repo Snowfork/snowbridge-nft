@@ -1080,16 +1080,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "console_error_panic_hook"
-version = "0.1.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a06aeb73f470f66dcdbf7223caeebb85984942f22f1adb2a088cf9668146bbbc"
-dependencies = [
- "cfg-if 1.0.0",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "constant_time_eq"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1625,20 +1615,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cumulus-pallet-session-benchmarking"
-version = "3.0.0"
-source = "git+https://github.com/paritytech/cumulus.git?branch=polkadot-v0.9.17#db11baacc325537be74ad34517fcb28ed9ded6c6"
-dependencies = [
- "frame-benchmarking",
- "frame-support",
- "frame-system",
- "pallet-session",
- "parity-scale-codec",
- "sp-runtime",
- "sp-std",
-]
-
-[[package]]
 name = "cumulus-pallet-xcm"
 version = "0.1.0"
 source = "git+https://github.com/paritytech/cumulus.git?branch=polkadot-v0.9.17#db11baacc325537be74ad34517fcb28ed9ded6c6"
@@ -2131,7 +2107,7 @@ dependencies = [
 [[package]]
 name = "ethabi-decode"
 version = "1.3.2"
-source = "git+https://github.com/snowfork/ethabi-decode.git?branch=master#becd27ee393fc1c38ba778c674943690f4ba3d5b"
+source = "git+https://github.com/Snowfork/ethabi-decode.git?branch=master#becd27ee393fc1c38ba778c674943690f4ba3d5b"
 dependencies = [
  "ethereum-types",
  "tiny-keccak 1.5.0",
@@ -9542,79 +9518,7 @@ dependencies = [
  "snowbridge-asset-registry",
  "snowbridge-basic-channel",
  "snowbridge-core",
- "snowbridge-dispatch",
- "snowbridge-dot-app",
- "snowbridge-erc20-app",
- "snowbridge-erc721-app",
- "snowbridge-eth-app",
- "snowbridge-ethereum-light-client",
- "snowbridge-incentivized-channel",
- "snowbridge-nft",
- "snowbridge-runtime-common",
- "snowbridge-runtime-primitives",
- "snowbridge-xcm-support",
- "sp-api",
- "sp-block-builder",
- "sp-consensus-aura",
- "sp-core",
- "sp-inherents",
- "sp-offchain",
- "sp-runtime",
- "sp-session",
- "sp-std",
- "sp-transaction-pool",
- "sp-version",
- "substrate-wasm-builder",
- "xcm",
- "xcm-builder",
- "xcm-executor",
-]
-
-[[package]]
-name = "snowblink-runtime"
-version = "0.1.1"
-dependencies = [
- "cumulus-pallet-aura-ext",
- "cumulus-pallet-dmp-queue",
- "cumulus-pallet-parachain-system",
- "cumulus-pallet-xcm",
- "cumulus-pallet-xcmp-queue",
- "cumulus-primitives-core",
- "cumulus-primitives-timestamp",
- "cumulus-primitives-utility",
- "frame-benchmarking",
- "frame-executive",
- "frame-support",
- "frame-system",
- "frame-system-benchmarking",
- "frame-system-rpc-runtime-api",
- "getrandom 0.2.5",
- "hex-literal",
- "pallet-assets",
- "pallet-aura",
- "pallet-authorship",
- "pallet-balances",
- "pallet-collator-selection",
- "pallet-collective",
- "pallet-membership",
- "pallet-preimage",
- "pallet-randomness-collective-flip",
- "pallet-scheduler",
- "pallet-session",
- "pallet-sudo",
- "pallet-timestamp",
- "pallet-transaction-payment",
- "pallet-transaction-payment-rpc-runtime-api",
- "pallet-utility",
- "pallet-xcm",
- "parachain-info",
- "parity-scale-codec",
- "polkadot-parachain",
- "scale-info",
- "serde",
- "snowbridge-asset-registry",
- "snowbridge-basic-channel",
- "snowbridge-core",
+ "snowbridge-core-nft",
  "snowbridge-dispatch",
  "snowbridge-dot-app",
  "snowbridge-erc20-app",
@@ -9690,9 +9594,7 @@ dependencies = [
  "sc-transaction-pool",
  "serde",
  "snowbase-runtime",
- "snowblink-runtime",
  "snowbridge-core",
- "snowbridge-runtime",
  "snowbridge-runtime-primitives",
  "sp-api",
  "sp-block-builder",
@@ -9718,21 +9620,20 @@ dependencies = [
 [[package]]
 name = "snowbridge-asset-registry"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "frame-support",
  "frame-system",
  "parity-scale-codec",
  "scale-info",
- "serde",
  "snowbridge-asset-registry-primitives",
- "sp-core",
- "sp-io",
  "sp-runtime",
 ]
 
 [[package]]
 name = "snowbridge-asset-registry-primitives"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "frame-support",
  "parity-scale-codec",
@@ -9743,6 +9644,7 @@ dependencies = [
 [[package]]
 name = "snowbridge-basic-channel"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "ethabi-decode",
  "frame-benchmarking",
@@ -9757,7 +9659,6 @@ dependencies = [
  "snowbridge-ethereum",
  "sp-core",
  "sp-io",
- "sp-keyring",
  "sp-runtime",
  "sp-std",
 ]
@@ -9765,12 +9666,12 @@ dependencies = [
 [[package]]
 name = "snowbridge-core"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "enum-iterator",
  "frame-support",
  "frame-system",
  "parity-scale-codec",
- "rustc-hex",
  "scale-info",
  "serde",
  "snowbridge-ethereum",
@@ -9780,20 +9681,37 @@ dependencies = [
 ]
 
 [[package]]
+name = "snowbridge-core-nft"
+version = "0.1.1"
+dependencies = [
+ "enum-iterator",
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "rustc-hex",
+ "scale-info",
+ "serde",
+ "snowbridge-core",
+ "snowbridge-ethereum",
+ "sp-core",
+ "sp-runtime",
+ "sp-std",
+]
+
+[[package]]
 name = "snowbridge-dispatch"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "frame-benchmarking",
  "frame-support",
  "frame-system",
- "hex-literal",
  "parity-scale-codec",
  "scale-info",
  "serde",
  "snowbridge-core",
  "sp-core",
  "sp-io",
- "sp-keyring",
  "sp-runtime",
  "sp-std",
 ]
@@ -9801,6 +9719,7 @@ dependencies = [
 [[package]]
 name = "snowbridge-dot-app"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "ethabi-decode",
  "frame-benchmarking",
@@ -9820,7 +9739,6 @@ dependencies = [
  "snowbridge-incentivized-channel",
  "sp-core",
  "sp-io",
- "sp-keyring",
  "sp-runtime",
  "sp-std",
 ]
@@ -9828,6 +9746,7 @@ dependencies = [
 [[package]]
 name = "snowbridge-erc20-app"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "ethabi-decode",
  "frame-benchmarking",
@@ -9850,7 +9769,6 @@ dependencies = [
  "snowbridge-incentivized-channel",
  "sp-core",
  "sp-io",
- "sp-keyring",
  "sp-runtime",
  "sp-std",
 ]
@@ -9869,6 +9787,7 @@ dependencies = [
  "scale-info",
  "serde",
  "snowbridge-core",
+ "snowbridge-core-nft",
  "snowbridge-dispatch",
  "snowbridge-ethereum",
  "snowbridge-nft",
@@ -9882,6 +9801,7 @@ dependencies = [
 [[package]]
 name = "snowbridge-eth-app"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "ethabi-decode",
  "frame-benchmarking",
@@ -9901,7 +9821,6 @@ dependencies = [
  "snowbridge-incentivized-channel",
  "sp-core",
  "sp-io",
- "sp-keyring",
  "sp-runtime",
  "sp-std",
 ]
@@ -9909,6 +9828,7 @@ dependencies = [
 [[package]]
 name = "snowbridge-ethereum"
 version = "0.1.0"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "ethabi-decode",
  "ethash",
@@ -9918,24 +9838,21 @@ dependencies = [
  "hex-literal",
  "parity-bytes",
  "parity-scale-codec",
- "rand 0.7.3",
  "rlp",
  "rustc-hex",
  "scale-info",
  "serde",
  "serde-big-array",
- "serde_json",
- "snowbridge-testutils",
  "sp-core",
  "sp-io",
  "sp-runtime",
  "sp-std",
- "wasm-bindgen-test",
 ]
 
 [[package]]
 name = "snowbridge-ethereum-light-client"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "ethash",
  "frame-benchmarking",
@@ -9947,13 +9864,10 @@ dependencies = [
  "rustc-hex",
  "scale-info",
  "serde",
- "serde_json",
  "snowbridge-core",
  "snowbridge-ethereum",
- "snowbridge-testutils",
  "sp-core",
  "sp-io",
- "sp-keyring",
  "sp-runtime",
  "sp-std",
 ]
@@ -9961,14 +9875,13 @@ dependencies = [
 [[package]]
 name = "snowbridge-incentivized-channel"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "ethabi-decode",
  "frame-benchmarking",
  "frame-support",
  "frame-system",
  "hex-literal",
- "pallet-assets",
- "pallet-balances",
  "parity-scale-codec",
  "rlp",
  "scale-info",
@@ -9977,7 +9890,6 @@ dependencies = [
  "snowbridge-ethereum",
  "sp-core",
  "sp-io",
- "sp-keyring",
  "sp-runtime",
  "sp-std",
 ]
@@ -9994,6 +9906,7 @@ dependencies = [
  "scale-info",
  "serde",
  "snowbridge-core",
+ "snowbridge-core-nft",
  "sp-core",
  "sp-io",
  "sp-keyring",
@@ -10002,81 +9915,9 @@ dependencies = [
 ]
 
 [[package]]
-name = "snowbridge-runtime"
-version = "0.1.1"
-dependencies = [
- "cumulus-pallet-aura-ext",
- "cumulus-pallet-dmp-queue",
- "cumulus-pallet-parachain-system",
- "cumulus-pallet-xcm",
- "cumulus-pallet-xcmp-queue",
- "cumulus-primitives-core",
- "cumulus-primitives-timestamp",
- "cumulus-primitives-utility",
- "frame-benchmarking",
- "frame-executive",
- "frame-support",
- "frame-system",
- "frame-system-benchmarking",
- "frame-system-rpc-runtime-api",
- "getrandom 0.2.5",
- "hex-literal",
- "pallet-assets",
- "pallet-aura",
- "pallet-authorship",
- "pallet-balances",
- "pallet-collator-selection",
- "pallet-collective",
- "pallet-membership",
- "pallet-preimage",
- "pallet-randomness-collective-flip",
- "pallet-scheduler",
- "pallet-session",
- "pallet-sudo",
- "pallet-timestamp",
- "pallet-transaction-payment",
- "pallet-transaction-payment-rpc-runtime-api",
- "pallet-utility",
- "pallet-xcm",
- "parachain-info",
- "parity-scale-codec",
- "polkadot-parachain",
- "scale-info",
- "serde",
- "snowbridge-asset-registry",
- "snowbridge-basic-channel",
- "snowbridge-core",
- "snowbridge-dispatch",
- "snowbridge-dot-app",
- "snowbridge-erc20-app",
- "snowbridge-erc721-app",
- "snowbridge-eth-app",
- "snowbridge-ethereum-light-client",
- "snowbridge-incentivized-channel",
- "snowbridge-nft",
- "snowbridge-runtime-common",
- "snowbridge-runtime-primitives",
- "snowbridge-xcm-support",
- "sp-api",
- "sp-block-builder",
- "sp-consensus-aura",
- "sp-core",
- "sp-inherents",
- "sp-offchain",
- "sp-runtime",
- "sp-session",
- "sp-std",
- "sp-transaction-pool",
- "sp-version",
- "substrate-wasm-builder",
- "xcm",
- "xcm-builder",
- "xcm-executor",
-]
-
-[[package]]
 name = "snowbridge-runtime-common"
 version = "0.1.0"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -10091,6 +9932,7 @@ dependencies = [
 [[package]]
 name = "snowbridge-runtime-primitives"
 version = "0.1.1"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -10100,160 +9942,12 @@ dependencies = [
  "sp-core",
  "sp-runtime",
  "sp-std",
-]
-
-[[package]]
-name = "snowbridge-test-node"
-version = "0.1.1"
-dependencies = [
- "clap",
- "cumulus-client-cli",
- "cumulus-client-collator",
- "cumulus-client-consensus-aura",
- "cumulus-client-consensus-common",
- "cumulus-client-network",
- "cumulus-client-service",
- "cumulus-primitives-core",
- "cumulus-primitives-parachain-inherent",
- "cumulus-relay-chain-interface",
- "cumulus-relay-chain-local",
- "derive_more",
- "frame-benchmarking",
- "frame-benchmarking-cli",
- "hex-literal",
- "jsonrpc-core 18.0.0",
- "log",
- "pallet-transaction-payment-rpc",
- "parity-scale-codec",
- "polkadot-cli",
- "polkadot-parachain",
- "polkadot-primitives",
- "polkadot-service",
- "sc-basic-authorship",
- "sc-chain-spec",
- "sc-cli",
- "sc-client-api",
- "sc-consensus",
- "sc-executor",
- "sc-keystore",
- "sc-network",
- "sc-rpc",
- "sc-rpc-api",
- "sc-service",
- "sc-telemetry",
- "sc-tracing",
- "sc-transaction-pool",
- "sc-transaction-pool-api",
- "serde",
- "snowbridge-test-runtime",
- "sp-api",
- "sp-block-builder",
- "sp-blockchain",
- "sp-consensus",
- "sp-consensus-aura",
- "sp-core",
- "sp-inherents",
- "sp-keystore",
- "sp-offchain",
- "sp-runtime",
- "sp-session",
- "sp-timestamp",
- "sp-transaction-pool",
- "substrate-build-script-utils",
- "substrate-frame-rpc-system",
- "substrate-prometheus-endpoint",
- "try-runtime-cli",
- "xcm",
-]
-
-[[package]]
-name = "snowbridge-test-pallet"
-version = "0.1.1"
-dependencies = [
- "frame-benchmarking",
- "frame-support",
- "frame-system",
- "parity-scale-codec",
- "scale-info",
- "serde",
- "sp-core",
- "sp-io",
- "sp-runtime",
-]
-
-[[package]]
-name = "snowbridge-test-runtime"
-version = "0.1.1"
-dependencies = [
- "cumulus-pallet-aura-ext",
- "cumulus-pallet-dmp-queue",
- "cumulus-pallet-parachain-system",
- "cumulus-pallet-session-benchmarking",
- "cumulus-pallet-xcm",
- "cumulus-pallet-xcmp-queue",
- "cumulus-primitives-core",
- "cumulus-primitives-timestamp",
- "cumulus-primitives-utility",
- "frame-benchmarking",
- "frame-executive",
- "frame-support",
- "frame-system",
- "frame-system-benchmarking",
- "frame-system-rpc-runtime-api",
- "frame-try-runtime",
- "log",
- "pallet-assets",
- "pallet-aura",
- "pallet-authorship",
- "pallet-balances",
- "pallet-collator-selection",
- "pallet-preimage",
- "pallet-scheduler",
- "pallet-session",
- "pallet-sudo",
- "pallet-timestamp",
- "pallet-transaction-payment",
- "pallet-transaction-payment-rpc-runtime-api",
- "pallet-xcm",
- "parachain-info",
- "parity-scale-codec",
- "polkadot-parachain",
- "polkadot-runtime-common",
- "scale-info",
- "serde",
- "smallvec",
- "snowbridge-test-pallet",
- "sp-api",
- "sp-block-builder",
- "sp-consensus-aura",
- "sp-core",
- "sp-inherents",
- "sp-io",
- "sp-offchain",
- "sp-runtime",
- "sp-session",
- "sp-std",
- "sp-transaction-pool",
- "sp-version",
- "substrate-wasm-builder",
- "xcm",
- "xcm-builder",
- "xcm-executor",
-]
-
-[[package]]
-name = "snowbridge-testutils"
-version = "0.1.0"
-dependencies = [
- "ethereum-types",
- "rustc-hex",
- "serde",
- "serde_json",
 ]
 
 [[package]]
 name = "snowbridge-xcm-support"
 version = "0.1.0"
+source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
 dependencies = [
  "frame-support",
  "frame-system",
@@ -11522,7 +11216,7 @@ dependencies = [
  "chrono",
  "lazy_static",
  "matchers",
- "parking_lot 0.11.2",
+ "parking_lot 0.10.2",
  "regex",
  "serde",
  "serde_json",
@@ -11915,30 +11609,6 @@ name = "wasm-bindgen-shared"
 version = "0.2.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3d958d035c4438e28c70e4321a2911302f10135ce78a9c7834c0cab4123d06a2"
-
-[[package]]
-name = "wasm-bindgen-test"
-version = "0.3.29"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "45c8d417d87eefa0087e62e3c75ad086be39433449e2961add9a5d9ce5acc2f1"
-dependencies = [
- "console_error_panic_hook",
- "js-sys",
- "scoped-tls",
- "wasm-bindgen",
- "wasm-bindgen-futures",
- "wasm-bindgen-test-macro",
-]
-
-[[package]]
-name = "wasm-bindgen-test-macro"
-version = "0.3.29"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d0e560d44db5e73b69a9757a15512fe7e1ef93ed2061c928871a4025798293dd"
-dependencies = [
- "proc-macro2",
- "quote",
-]
 
 [[package]]
 name = "wasm-gc-api"

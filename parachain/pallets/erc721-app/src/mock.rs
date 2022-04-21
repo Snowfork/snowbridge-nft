@@ -15,7 +15,8 @@ use sp_runtime::{
 	MultiSignature,
 };
 
-use snowbridge_core::{nft::ERC721TokenData, ChannelId, OutboundRouter};
+use snowbridge_core::{ChannelId, OutboundRouter};
+use snowbridge_core_nft::ERC721TokenData;
 
 use crate as erc721_app;
 

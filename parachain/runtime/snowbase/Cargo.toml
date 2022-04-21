@@ -20,8 +20,8 @@ frame-executive = { git = "https://github.com/paritytech/substrate.git", branch 
 frame-support = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 frame-system = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 frame-system-rpc-runtime-api = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
-pallet-aura = { git = "https://github.com/paritytech/substrate.git", default-features = false, branch = "polkadot-v0.9.17" }
-pallet-authorship = { git = "https://github.com/paritytech/substrate.git", default-features = false , branch = "polkadot-v0.9.17" }
+pallet-aura = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
+pallet-authorship = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-sudo = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-balances = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-assets = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
@@ -30,7 +30,7 @@ pallet-timestamp = { git = "https://github.com/paritytech/substrate.git", branch
 pallet-utility = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-transaction-payment = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
-pallet-session = { git = "https://github.com/paritytech/substrate.git", default-features = false , branch = "polkadot-v0.9.17" }
+pallet-session = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-collective = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-membership = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 pallet-scheduler = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
@@ -66,21 +66,22 @@ xcm-executor = { git = "https://github.com/paritytech/polkadot.git", branch = "r
 xcm-builder = { git = "https://github.com/paritytech/polkadot.git", branch = "release-v0.9.17", default-features = false }
 polkadot-parachain = { git = "https://github.com/paritytech/polkadot.git", branch = "release-v0.9.17", default-features = false }
 
-snowbridge-core = { path = "../../primitives/core", default-features = false }
-runtime-primitives = { path = "../../primitives/runtime", default-features = false, package = "snowbridge-runtime-primitives" }
+snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+snowbridge-core-nft = { path = "../../primitives/core", default-features = false }
+runtime-primitives = { git = "https://github.com/Snowfork/snowbridge.git", package = "snowbridge-runtime-primitives", branch="alistair/remove-nft", default-features = false }
 
-snowbridge-xcm-support = { path = "../../primitives/xcm-support", default-features = false }
-snowbridge-asset-registry = { path = "../../pallets/asset-registry", default-features = false }
-basic-channel = { path = "../../pallets/basic-channel", package = "snowbridge-basic-channel", default-features = false }
-incentivized-channel = { path = "../../pallets/incentivized-channel", package = "snowbridge-incentivized-channel", default-features = false }
-dispatch = { path = "../../pallets/dispatch", package = "snowbridge-dispatch", default-features = false }
-ethereum-light-client = { path = "../../pallets/ethereum-light-client", package = "snowbridge-ethereum-light-client", default-features = false }
+snowbridge-xcm-support = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+snowbridge-asset-registry = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+basic-channel = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-basic-channel", default-features = false }
+incentivized-channel = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-incentivized-channel", default-features = false }
+dispatch = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false, package = "snowbridge-dispatch" }
+ethereum-light-client = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-ethereum-light-client", default-features = false }
 nft = { path = "../../pallets/nft", package = "snowbridge-nft", default-features = false }
-dot-app = { path = "../../pallets/dot-app", package = "snowbridge-dot-app", default-features = false }
-eth-app = { path = "../../pallets/eth-app", package = "snowbridge-eth-app", default-features = false }
-erc20-app = { path = "../../pallets/erc20-app", package = "snowbridge-erc20-app", default-features = false }
+dot-app = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-dot-app", default-features = false }
+eth-app = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-eth-app", default-features = false }
+erc20-app = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-erc20-app", default-features = false }
 erc721-app = { path = "../../pallets/erc721-app", package = "snowbridge-erc721-app", default-features = false }
-runtime-common = { path = "../common", package = "snowbridge-runtime-common", default-features = false }
+runtime-common = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-runtime-common", default-features = false }
 
 # Used for runtime benchmarking
 frame-benchmarking = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false, optional = true }
@@ -150,6 +151,7 @@ std = [
     "erc20-app/std",
     "erc721-app/std",
     "snowbridge-core/std",
+    "snowbridge-core-nft/std",
     "runtime-primitives/std",
     "snowbridge-xcm-support/std",
     "snowbridge-asset-registry/std",
@@ -172,6 +174,7 @@ runtime-benchmarks = [
     "pallet-scheduler/runtime-benchmarks",
     # Snowbridge pallets & support
     "snowbridge-core/runtime-benchmarks",
+    "snowbridge-core-nft/runtime-benchmarks",
     "basic-channel/runtime-benchmarks",
     "dot-app/runtime-benchmarks",
     "dispatch/runtime-benchmarks",

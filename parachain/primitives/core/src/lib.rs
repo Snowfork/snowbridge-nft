@@ -1,56 +1,47 @@
-//! # Core
-//!
-//! Common traits and types
-
 #![allow(dead_code)]
 #![allow(unused_variables)]
 #![cfg_attr(not(feature = "std"), no_std)]
 
 use frame_support::dispatch::{DispatchError, DispatchResult};
-use frame_system::Config;
-use snowbridge_ethereum::{Header, Log, U256};
+use snowbridge_ethereum::U256;
+
+use codec::{Decode, Encode};
+use scale_info::TypeInfo;
 use sp_core::H160;
-use sp_std::prelude::*;
+use sp_runtime::{sp_std::prelude::Vec, RuntimeDebug};
 
-pub mod assets;
-pub mod nft;
-pub mod types;
-
-pub use types::{ChannelId, Message, MessageId, MessageNonce, Proof};
-
-pub use nft::{ERC721TokenData, TokenInfo};
-
-/// A trait for verifying messages.
-///
-/// This trait should be implemented by runtime modules that wish to provide message verification
-/// functionality.
-pub trait Verifier {
-	fn verify(message: &Message) -> Result<Log, DispatchError>;
-	fn initialize_storage(
-		headers: Vec<Header>,
-		initial_difficulty: U256,
-		descendants_until_final: u8,
-	) -> Result<(), &'static str>;
+/// Token info
+#[derive(Encode, Decode, Clone, Eq, PartialEq, RuntimeDebug, TypeInfo)]
+pub struct TokenInfo<AccountId, Data> {
+	/// Token owner
+	pub owner: AccountId,
+	/// Token metadata
+	pub metadata: Vec<u8>,
+	/// Token Properties
+	pub data: Data,
 }
 
-/// Outbound submission for applications
-pub trait OutboundRouter<AccountId> {
-	fn submit(
-		channel_id: ChannelId,
-		who: &AccountId,
-		target: H160,
-		payload: &[u8],
-	) -> DispatchResult;
+#[cfg_attr(feature = "std", derive(serde::Serialize, serde::Deserialize))]
+#[derive(Encode, Decode, Clone, Eq, PartialEq, RuntimeDebug, TypeInfo)]
+pub struct ERC721TokenData {
+	/// The ERC721 smart contract on Ethereum
+	pub token_contract: H160,
+	/// The ERC721 token id
+	pub token_id: U256,
 }
 
-/// Add a message to a commitment
-pub trait MessageCommitment {
-	fn add(channel_id: ChannelId, target: H160, nonce: u64, payload: &[u8]) -> DispatchResult;
-}
+pub trait Nft<AccountId, TokenId, TokenData> {
+	fn mint(
+		owner: &AccountId,
+		metadata: Vec<u8>,
+		data: TokenData,
+	) -> Result<TokenId, DispatchError>;
 
-/// Dispatch a message
-pub trait MessageDispatch<T: Config, MessageId> {
-	fn dispatch(source: H160, id: MessageId, payload: &[u8]);
-	#[cfg(feature = "runtime-benchmarks")]
-	fn successful_dispatch_event(id: MessageId) -> Option<<T as Config>::Event>;
+	fn burn(owner: &AccountId, token_id: TokenId) -> DispatchResult;
+
+	fn transfer(from: &AccountId, to: &AccountId, token_id: TokenId) -> DispatchResult;
+
+	fn is_owner(account: &AccountId, token_id: TokenId) -> bool;
+
+	fn get_token_data(token_id: TokenId) -> Option<TokenInfo<AccountId, TokenData>>;
 }

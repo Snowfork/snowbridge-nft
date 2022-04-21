@@ -1,5 +1,5 @@
 [package]
-name = "snowbridge-core"
+name = "snowbridge-core-nft"
 version = "0.1.1"
 authors = ["Snowfork <contact@snowfork.com>"]
 edition = "2018"
@@ -9,7 +9,8 @@ serde = { version = "1.0.130", optional = true, features = ["derive"] }
 codec = { package = "parity-scale-codec", version = "2.2.0", default-features = false }
 scale-info = { version = "1.0", default-features = false, features = ["derive"] }
 enum-iterator = "0.6.0"
-snowbridge-ethereum = { path = "../ethereum", default-features = false }
+snowbridge-ethereum = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
 
 frame-support = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 frame-system = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
@@ -31,5 +32,6 @@ std = [
     "sp-core/std",
     "sp-runtime/std",
     "snowbridge-ethereum/std",
+    "snowbridge-core/std",
 ]
 runtime-benchmarks = []

@@ -24,12 +24,13 @@ sp-runtime = { git = "https://github.com/paritytech/substrate.git", branch = "po
 
 ethabi = { git = "https://github.com/Snowfork/ethabi-decode.git", package = "ethabi-decode", branch = "master", default-features = false }
 
-snowbridge-core = { path = "../../primitives/core", default-features = false }
-snowbridge-ethereum = { path = "../../primitives/ethereum", default-features = false }
+snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+snowbridge-ethereum = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+snowbridge-core-nft = { path = "../../primitives/core", default-features = false }
 
 [dev-dependencies]
 snowbridge-nft = { path = "../../pallets/nft" }
-snowbridge-dispatch = { path = "../../pallets/dispatch" }
+snowbridge-dispatch = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft" }
 sp-keyring = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17" }
 
 [features]
@@ -46,6 +47,7 @@ std = [
     "sp-io/std",
     "sp-runtime/std",
     "snowbridge-core/std",
+    "snowbridge-core-nft/std",
     "snowbridge-ethereum/std",
     "ethabi/std",
     "rlp/std"

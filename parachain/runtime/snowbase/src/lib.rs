@@ -50,7 +50,8 @@ pub use sp_runtime::BuildStorage;
 pub use sp_runtime::{traits::AccountIdConversion, Perbill, Permill};
 
 use dispatch::EnsureEthereumAccount;
-pub use snowbridge_core::{ChannelId, ERC721TokenData, MessageId};
+pub use snowbridge_core::{ChannelId, MessageId};
+pub use snowbridge_core_nft::ERC721TokenData;
 
 pub use ethereum_light_client::{EthereumDifficultyConfig, EthereumHeader};
 
