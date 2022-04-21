@@ -26,7 +26,7 @@ use sp_runtime::{
 };
 use sp_std::vec::Vec;
 
-use snowbridge_core_nft::{Nft, TokenInfo};
+use snowbridge_nft_core::{Nft, TokenInfo};
 
 // TODO add
 // mod benchmarking;

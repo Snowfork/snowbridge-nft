@@ -4,7 +4,7 @@ use sp_core::H160;
 use sp_keyring::AccountKeyring as Keyring;
 
 use snowbridge_core::ChannelId;
-use snowbridge_core_nft::{ERC721TokenData, Nft};
+use snowbridge_nft_core::{ERC721TokenData, Nft};
 use snowbridge_ethereum::U256;
 
 use crate::Event;

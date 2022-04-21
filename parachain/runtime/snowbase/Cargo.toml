@@ -67,7 +67,7 @@ xcm-builder = { git = "https://github.com/paritytech/polkadot.git", branch = "re
 polkadot-parachain = { git = "https://github.com/paritytech/polkadot.git", branch = "release-v0.9.17", default-features = false }
 
 snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
-snowbridge-core-nft = { path = "../../primitives/core", default-features = false }
+snowbridge-nft-core = { path = "../../primitives/nft-core", default-features = false }
 runtime-primitives = { git = "https://github.com/Snowfork/snowbridge.git", package = "snowbridge-runtime-primitives", branch="alistair/remove-nft", default-features = false }
 
 snowbridge-xcm-support = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
@@ -151,7 +151,7 @@ std = [
     "erc20-app/std",
     "erc721-app/std",
     "snowbridge-core/std",
-    "snowbridge-core-nft/std",
+    "snowbridge-nft-core/std",
     "runtime-primitives/std",
     "snowbridge-xcm-support/std",
     "snowbridge-asset-registry/std",
@@ -174,7 +174,7 @@ runtime-benchmarks = [
     "pallet-scheduler/runtime-benchmarks",
     # Snowbridge pallets & support
     "snowbridge-core/runtime-benchmarks",
-    "snowbridge-core-nft/runtime-benchmarks",
+    "snowbridge-nft-core/runtime-benchmarks",
     "basic-channel/runtime-benchmarks",
     "dot-app/runtime-benchmarks",
     "dispatch/runtime-benchmarks",

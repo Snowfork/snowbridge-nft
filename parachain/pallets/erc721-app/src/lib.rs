@@ -20,7 +20,7 @@ use sp_std::prelude::*;
 use sp_core::H160;
 use sp_runtime::traits::{AtLeast32BitUnsigned, StaticLookup};
 
-use snowbridge_core_nft::{ERC721TokenData, Nft};
+use snowbridge_nft_core::{ERC721TokenData, Nft};
 use snowbridge_core::{ChannelId, OutboundRouter};
 use snowbridge_ethereum::U256;
 

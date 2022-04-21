@@ -17,7 +17,7 @@ snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="
 basic-channel = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-basic-channel", default-features = false }
 incentivized-channel = { path = "../../pallets/incentivized-channel", package = "snowbridge-incentivized-channel", default-features = false }
 
-snowbridge-core-nft = { path = "../../primitives/core", default-features = false }
+snowbridge-nft-core = { path = "../../primitives/nft-core", default-features = false }
 
 [features]
 default = ["std"]
@@ -28,7 +28,7 @@ std = [
     "sp-std/std",
     "sp-runtime/std",
     "snowbridge-core/std",
-    "snowbridge-core-nft/std",
+    "snowbridge-nft-core/std",
     "basic-channel/std",
     "incentivized-channel/std",
 ]

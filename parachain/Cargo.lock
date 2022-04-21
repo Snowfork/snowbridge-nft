@@ -9518,7 +9518,6 @@ dependencies = [
  "snowbridge-asset-registry",
  "snowbridge-basic-channel",
  "snowbridge-core",
- "snowbridge-core-nft",
  "snowbridge-dispatch",
  "snowbridge-dot-app",
  "snowbridge-erc20-app",
@@ -9527,6 +9526,7 @@ dependencies = [
  "snowbridge-ethereum-light-client",
  "snowbridge-incentivized-channel",
  "snowbridge-nft",
+ "snowbridge-nft-core",
  "snowbridge-runtime-common",
  "snowbridge-runtime-primitives",
  "snowbridge-xcm-support",
@@ -9681,24 +9681,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "snowbridge-core-nft"
-version = "0.1.1"
-dependencies = [
- "enum-iterator",
- "frame-support",
- "frame-system",
- "parity-scale-codec",
- "rustc-hex",
- "scale-info",
- "serde",
- "snowbridge-core",
- "snowbridge-ethereum",
- "sp-core",
- "sp-runtime",
- "sp-std",
-]
-
-[[package]]
 name = "snowbridge-dispatch"
 version = "0.1.1"
 source = "git+https://github.com/Snowfork/snowbridge.git?branch=alistair/remove-nft#df692562bcc688db2110da6b74ccdb81d2b1d3e5"
@@ -9787,10 +9769,10 @@ dependencies = [
  "scale-info",
  "serde",
  "snowbridge-core",
- "snowbridge-core-nft",
  "snowbridge-dispatch",
  "snowbridge-ethereum",
  "snowbridge-nft",
+ "snowbridge-nft-core",
  "sp-core",
  "sp-io",
  "sp-keyring",
@@ -9906,10 +9888,28 @@ dependencies = [
  "scale-info",
  "serde",
  "snowbridge-core",
- "snowbridge-core-nft",
+ "snowbridge-nft-core",
  "sp-core",
  "sp-io",
  "sp-keyring",
+ "sp-runtime",
+ "sp-std",
+]
+
+[[package]]
+name = "snowbridge-nft-core"
+version = "0.1.1"
+dependencies = [
+ "enum-iterator",
+ "frame-support",
+ "frame-system",
+ "parity-scale-codec",
+ "rustc-hex",
+ "scale-info",
+ "serde",
+ "snowbridge-core",
+ "snowbridge-ethereum",
+ "sp-core",
  "sp-runtime",
  "sp-std",
 ]

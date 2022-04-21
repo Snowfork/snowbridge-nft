@@ -103,7 +103,7 @@ panic = "unwind"
 
 [workspace]
 members = [
-    "primitives/core",
+    "primitives/nft-core",
     "pallets/nft",
     "pallets/erc721-app",
     "runtime/snowbase",

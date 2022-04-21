@@ -22,7 +22,7 @@ sp-std = { git = "https://github.com/paritytech/substrate.git", branch = "polkad
 sp-runtime = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 
 snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
-snowbridge-core-nft = { path = "../../primitives/core", default-features = false }
+snowbridge-nft-core = { path = "../../primitives/nft-core", default-features = false }
 
 [dev-dependencies]
 sp-keyring = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
@@ -41,12 +41,12 @@ std = [
     "sp-io/std",
     "sp-runtime/std",
     "snowbridge-core/std",
-    "snowbridge-core-nft/std",
+    "snowbridge-nft-core/std",
 ]
 runtime-benchmarks = [
     "frame-benchmarking",
     "frame-support/runtime-benchmarks",
     "frame-system/runtime-benchmarks",
     "snowbridge-core/runtime-benchmarks",
-    "snowbridge-core-nft/runtime-benchmarks",
+    "snowbridge-nft-core/runtime-benchmarks",
 ]

@@ -16,7 +16,7 @@ use sp_runtime::{
 };
 
 use snowbridge_core::{ChannelId, OutboundRouter};
-use snowbridge_core_nft::ERC721TokenData;
+use snowbridge_nft_core::ERC721TokenData;
 
 use crate as erc721_app;
 

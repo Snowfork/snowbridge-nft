@@ -26,7 +26,7 @@ ethabi = { git = "https://github.com/Snowfork/ethabi-decode.git", package = "eth
 
 snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
 snowbridge-ethereum = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
-snowbridge-core-nft = { path = "../../primitives/core", default-features = false }
+snowbridge-nft-core = { path = "../../primitives/nft-core", default-features = false }
 
 [dev-dependencies]
 snowbridge-nft = { path = "../../pallets/nft" }
@@ -47,7 +47,7 @@ std = [
     "sp-io/std",
     "sp-runtime/std",
     "snowbridge-core/std",
-    "snowbridge-core-nft/std",
+    "snowbridge-nft-core/std",
     "snowbridge-ethereum/std",
     "ethabi/std",
     "rlp/std"
