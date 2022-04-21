@@ -1,4 +1,4 @@
-# Ethereum Contracts
+# ERC721 Ethereum Contracts
 
 This directory contains an archive of the ERC721 smart contract once utilized by the Polkadot-Ethereum Bridge.
 
@@ -15,7 +15,7 @@ Install dependencies with yarn:
 yarn install
 ```
 
-Create an `.envrc` file using [.envrc.template](.envrc.template) as a template. Note that deploying to ropsten network requires setting the INFURA_PROJECT_ID and ROPSTEN_PRIVATE_KEY environment variables.
+Create an `.envrc` file using [.envrc-example](.envrc-example) as a template. Note that deploying to ropsten network requires setting the INFURA_PROJECT_ID and ROPSTEN_PRIVATE_KEY environment variables.
 
 Example:
 
@@ -40,42 +40,4 @@ Example: Run a local hardhat instance with deployments
 
 ```
 yarn hardhat node
-```
-
-### Ropsten, Mainnet
-
-```
-yarn hardhat deploy --network ropsten
-```
-
-## Tasks
-
-### Upgrade an app
-
-Example: upgrade an app to use a different set of channels
-
-```sh
-# Do something first to deploy new channels, then provide addresses below
-yarn hardhat upgrade \
-  --appaddr       0x3f0839385DB9cBEa8E73AdA6fa0CFe07E321F61d \
-  --basicinbound  0x0000000000000000000000000000000000000001 \
-  --basicoutbound 0x0000000000000000000000000000000000000002 \
-  --incinbound    0x0000000000000000000000000000000000000003 \
-  --incoutbound   0x0000000000000000000000000000000000000004 \
-  --network       localhost # change to ropsten or mainnet accordingly
-```
-
-### Renounce ownership of the CHANNEL_UPGRADE_ROLE
-
-```sh
-yarn hardhat renounce \
-  --appaddr 0x3f0839385DB9cBEa8E73AdA6fa0CFe07E321F61d \
-  --network localhost
-```
-
-### View the address of deployed contract's
-
-```sh
-yarn hardhat  contractAddressList \
-  --network localhost # change to ropsten or mainnet accordingly
 ```
