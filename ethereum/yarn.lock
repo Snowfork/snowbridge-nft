@@ -1864,9 +1864,9 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@snowfork/snowbridge-contracts@https://gitpkg.now.sh/snowfork/snowbridge/ethereum?alistair/remove-nft":
+"@snowfork/snowbridge-contracts@https://gitpkg.now.sh/snowfork/snowbridge/ethereum?nft-removal":
   version "1.0.0"
-  resolved "https://gitpkg.now.sh/snowfork/snowbridge/ethereum?alistair/remove-nft#b9e1e464df61ce087d9f14ffe48d4c0459f06f44"
+  resolved "https://gitpkg.now.sh/snowfork/snowbridge/ethereum?nft-removal#98850d184c4dbb04226b8a4c0ff856fb214a0644"
   dependencies:
     "@iarna/toml" "^2.2.5"
     "@nomiclabs/hardhat-etherscan" "^2.1.4"

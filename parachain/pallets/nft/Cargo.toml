@@ -21,7 +21,7 @@ sp-core = { git = "https://github.com/paritytech/substrate.git", branch = "polka
 sp-std = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 sp-runtime = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false }
 
-snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", default-features = false }
 snowbridge-nft-core = { path = "../../primitives/nft-core", default-features = false }
 
 [dev-dependencies]

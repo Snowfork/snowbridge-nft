@@ -11,7 +11,7 @@
     "@openzeppelin/contracts": "^4.1.0",
     "@openzeppelin/test-helpers": "https://github.com/Snowfork/openzeppelin-test-helpers.git#3f9c4b8",
     "@polkadot/api": "^7.7.1",
-    "@snowfork/snowbridge-contracts": "https://gitpkg.now.sh/snowfork/snowbridge/ethereum?alistair/remove-nft",
+    "@snowfork/snowbridge-contracts": "https://gitpkg.now.sh/snowfork/snowbridge/ethereum?nft-removal",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^3.0.0",

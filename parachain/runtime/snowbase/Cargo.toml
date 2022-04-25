@@ -66,22 +66,22 @@ xcm-executor = { git = "https://github.com/paritytech/polkadot.git", branch = "r
 xcm-builder = { git = "https://github.com/paritytech/polkadot.git", branch = "release-v0.9.17", default-features = false }
 polkadot-parachain = { git = "https://github.com/paritytech/polkadot.git", branch = "release-v0.9.17", default-features = false }
 
-snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
+snowbridge-core = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", default-features = false }
 snowbridge-nft-core = { path = "../../primitives/nft-core", default-features = false }
-runtime-primitives = { git = "https://github.com/Snowfork/snowbridge.git", package = "snowbridge-runtime-primitives", branch="alistair/remove-nft", default-features = false }
+runtime-primitives = { git = "https://github.com/Snowfork/snowbridge.git", package = "snowbridge-runtime-primitives", tag="nft-removal", default-features = false }
 
-snowbridge-xcm-support = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
-snowbridge-asset-registry = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false }
-basic-channel = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-basic-channel", default-features = false }
-incentivized-channel = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-incentivized-channel", default-features = false }
-dispatch = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", default-features = false, package = "snowbridge-dispatch" }
-ethereum-light-client = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-ethereum-light-client", default-features = false }
+snowbridge-xcm-support = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", default-features = false }
+snowbridge-asset-registry = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", default-features = false }
+basic-channel = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", package = "snowbridge-basic-channel", default-features = false }
+incentivized-channel = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", package = "snowbridge-incentivized-channel", default-features = false }
+dispatch = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", default-features = false, package = "snowbridge-dispatch" }
+ethereum-light-client = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", package = "snowbridge-ethereum-light-client", default-features = false }
 nft = { path = "../../pallets/nft", package = "snowbridge-nft", default-features = false }
-dot-app = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-dot-app", default-features = false }
-eth-app = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-eth-app", default-features = false }
-erc20-app = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-erc20-app", default-features = false }
+dot-app = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", package = "snowbridge-dot-app", default-features = false }
+eth-app = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", package = "snowbridge-eth-app", default-features = false }
+erc20-app = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", package = "snowbridge-erc20-app", default-features = false }
 erc721-app = { path = "../../pallets/erc721-app", package = "snowbridge-erc721-app", default-features = false }
-runtime-common = { git = "https://github.com/Snowfork/snowbridge.git", branch="alistair/remove-nft", package = "snowbridge-runtime-common", default-features = false }
+runtime-common = { git = "https://github.com/Snowfork/snowbridge.git", tag="nft-removal", package = "snowbridge-runtime-common", default-features = false }
 
 # Used for runtime benchmarking
 frame-benchmarking = { git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.17", default-features = false, optional = true }
