@@ -1,0 +1,315 @@
+{
+  "address": "0xFc97A6197dc90bef6bbEFD672742Ed75E9768553",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "root",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "numOfValidators",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "id",
+          "type": "uint64"
+        }
+      ],
+      "name": "ValidatorRegistryUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pos",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "proof",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "checkValidatorInSet",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "id",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "numOfValidators",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "root",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_root",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_numOfValidators",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_id",
+          "type": "uint64"
+        }
+      ],
+      "name": "update",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x8f09af4a830d706d822e687f74db8e26ad4ec04f786300ce430c2bf27706144b",
+  "receipt": {
+    "to": null,
+    "from": "0xBe68fC2d8249eb60bfCf0e71D5A0d2F2e292c4eD",
+    "contractAddress": "0xFc97A6197dc90bef6bbEFD672742Ed75E9768553",
+    "transactionIndex": 0,
+    "gasUsed": "441119",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000001000000000000000400000000000000000000020000000000000000000800000004000000000000000000000000400000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000040000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x923c7d539c2cf7f809012d19bcb2a46ecae4c9c63ec0df2d5a9f0243d975e4f8",
+    "transactionHash": "0x8f09af4a830d706d822e687f74db8e26ad4ec04f786300ce430c2bf27706144b",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 9,
+        "transactionHash": "0x8f09af4a830d706d822e687f74db8e26ad4ec04f786300ce430c2bf27706144b",
+        "address": "0xFc97A6197dc90bef6bbEFD672742Ed75E9768553",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000be68fc2d8249eb60bfcf0e71d5a0d2f2e292c4ed"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0x923c7d539c2cf7f809012d19bcb2a46ecae4c9c63ec0df2d5a9f0243d975e4f8"
+      }
+    ],
+    "blockNumber": 9,
+    "cumulativeGasUsed": "441119",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "4c5f7479fbcbb8f587221b3596eb14de",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"root\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"numOfValidators\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint64\",\"name\":\"id\",\"type\":\"uint64\"}],\"name\":\"ValidatorRegistryUpdated\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"pos\",\"type\":\"uint256\"},{\"internalType\":\"bytes32[]\",\"name\":\"proof\",\"type\":\"bytes32[]\"}],\"name\":\"checkValidatorInSet\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"id\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"numOfValidators\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"root\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_root\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"_numOfValidators\",\"type\":\"uint256\"},{\"internalType\":\"uint64\",\"name\":\"_id\",\"type\":\"uint64\"}],\"name\":\"update\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Stores the validator set as a Merkle rootInherits `Ownable` to ensure it can only be callable by the instantiating contract account (which is the BeefyLightClient contract)\",\"kind\":\"dev\",\"methods\":{\"checkValidatorInSet(address,uint256,bytes32[])\":{\"params\":{\"addr\":\"The address of the validator to check\",\"pos\":\"The position of the validator to check, index starting at 0\",\"proof\":\"Merkle proof required for validation of the address\"},\"returns\":{\"_0\":\"Returns true if the validator is in the set\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"update(bytes32,uint256,uint64)\":{\"params\":{\"_numOfValidators\":\"The new number of validators\",\"_root\":\"The new root\"}}},\"title\":\"A contract storing state on the current validator set\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"checkValidatorInSet(address,uint256,bytes32[])\":{\"notice\":\"Checks if a validators address is a member of the merkle tree\"},\"update(bytes32,uint256,uint64)\":{\"notice\":\"Updates the validator registry and number of validators\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol\":\"ValidatorRegistry\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor () {\\n        address msgSender = _msgSender();\\n        _owner = msgSender;\\n        emit OwnershipTransferred(address(0), msgSender);\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        emit OwnershipTransferred(_owner, address(0));\\n        _owner = address(0);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        emit OwnershipTransferred(_owner, newOwner);\\n        _owner = newOwner;\\n    }\\n}\\n\",\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/*\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        this; // silence state mutability warning without generating bytecode - see https://github.com/ethereum/solidity/issues/2691\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\"},\"@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: Apache-2.0\\npragma solidity ^0.8.5;\\npragma experimental ABIEncoderV2;\\n\\nimport \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\nimport \\\"./utils/MerkleProof.sol\\\";\\n\\n/**\\n * @title A contract storing state on the current validator set\\n * @dev Stores the validator set as a Merkle root\\n * @dev Inherits `Ownable` to ensure it can only be callable by the\\n * instantiating contract account (which is the BeefyLightClient contract)\\n */\\ncontract ValidatorRegistry is Ownable {\\n    /* Events */\\n\\n    event ValidatorRegistryUpdated(\\n        bytes32 root,\\n        uint256 numOfValidators,\\n        uint64 id\\n    );\\n\\n    /* State */\\n\\n    bytes32 public root;\\n    uint256 public numOfValidators;\\n    uint64 public id;\\n\\n    /**\\n     * @notice Updates the validator registry and number of validators\\n     * @param _root The new root\\n     * @param _numOfValidators The new number of validators\\n     */\\n    function update(\\n        bytes32 _root,\\n        uint256 _numOfValidators,\\n        uint64 _id\\n    ) public onlyOwner {\\n        root = _root;\\n        numOfValidators = _numOfValidators;\\n        id = _id;\\n        emit ValidatorRegistryUpdated(_root, _numOfValidators, _id);\\n    }\\n\\n    /**\\n     * @notice Checks if a validators address is a member of the merkle tree\\n     * @param addr The address of the validator to check\\n     * @param pos The position of the validator to check, index starting at 0\\n     * @param proof Merkle proof required for validation of the address\\n     * @return Returns true if the validator is in the set\\n     */\\n    function checkValidatorInSet(\\n        address addr,\\n        uint256 pos,\\n        bytes32[] memory proof\\n    ) public view returns (bool) {\\n        bytes32 hashedLeaf = keccak256(abi.encodePacked(addr));\\n        return\\n            MerkleProof.verifyMerkleLeafAtPosition(\\n                root,\\n                hashedLeaf,\\n                pos,\\n                numOfValidators,\\n                proof\\n            );\\n    }\\n}\\n\",\"keccak256\":\"0x5a55d9052bf1f9a8f6ae57574a1d029b16b8909677297fd2ee7b9f021b171fc6\",\"license\":\"Apache-2.0\"},\"@snowfork/snowbridge-contracts/contracts/utils/MerkleProof.sol\":{\"content\":\"// \\\"SPDX-License-Identifier: Apache-2.0\\\"\\npragma solidity ^0.8.5;\\n\\nlibrary MerkleProof {\\n    /**\\n     * @notice Verify that a specific leaf element is part of the Merkle Tree at a specific position in the tree\\n     *\\n     * @param root the root of the merkle tree\\n     * @param leaf the leaf which needs to be proven\\n     * @param pos the position of the leaf, index starting with 0\\n     * @param width the width or number of leaves in the tree\\n     * @param proof the array of proofs to help verify the leaf's membership, ordered from leaf to root\\n     * @return a boolean value representing the success or failure of the operation\\n     */\\n    function verifyMerkleLeafAtPosition(\\n        bytes32 root,\\n        bytes32 leaf,\\n        uint256 pos,\\n        uint256 width,\\n        bytes32[] calldata proof\\n    ) public pure returns (bool) {\\n        bytes32 computedHash = computeRootFromProofAtPosition(\\n            leaf,\\n            pos,\\n            width,\\n            proof\\n        );\\n\\n        return computedHash == root;\\n    }\\n\\n    /**\\n     * @notice Compute the root of a MMR from a leaf and proof\\n     *\\n     * @param leaf the leaf we want to prove\\n     * @param proof an array of nodes to be hashed in order that they should be hashed\\n     * @param side an array of booleans signalling whether the corresponding node should be hashed on the left side or\\n     * the right side of the current hash\\n     */\\n    function computeRootFromProofAndSide(\\n        bytes32 leaf,\\n        bytes32[] calldata proof,\\n        bool[] calldata side\\n    ) public pure returns (bytes32) {\\n        bytes32 node = leaf;\\n        for (uint256 i = 0; i < proof.length; i++) {\\n            if (side[i]) {\\n                node = keccak256(abi.encodePacked(proof[i], node));\\n            } else {\\n                node = keccak256(abi.encodePacked(node, proof[i]));\\n            }\\n        }\\n        return node;\\n    }\\n\\n    function computeRootFromProofAtPosition(\\n        bytes32 leaf,\\n        uint256 pos,\\n        uint256 width,\\n        bytes32[] calldata proof\\n    ) public pure returns (bytes32) {\\n        bytes32 computedHash = leaf;\\n\\n        require(pos < width, \\\"Merkle position is too high\\\");\\n\\n        uint256 i = 0;\\n        for (uint256 height = 0; width > 1; height++) {\\n            bool computedHashLeft = pos % 2 == 0;\\n\\n            // check if at rightmost branch and whether the computedHash is left\\n            if (pos + 1 == width && computedHashLeft) {\\n                // there is no sibling and also no element in proofs, so we just go up one layer in the tree\\n                pos /= 2;\\n                width = ((width - 1) / 2) + 1;\\n                continue;\\n            }\\n\\n            require(i < proof.length, \\\"Merkle proof is too short\\\");\\n\\n            bytes32 proofElement = proof[i];\\n\\n            if (computedHashLeft) {\\n                computedHash = keccak256(\\n                    abi.encodePacked(computedHash, proofElement)\\n                );\\n            } else {\\n                computedHash = keccak256(\\n                    abi.encodePacked(proofElement, computedHash)\\n                );\\n            }\\n\\n            pos /= 2;\\n            width = ((width - 1) / 2) + 1;\\n            i++;\\n        }\\n\\n        return computedHash;\\n    }\\n}\\n\",\"keccak256\":\"0xd2adb5e9f48b705bf33c8151ba8f818ee2cd04047b2b0d8cd2c5f5dbdf479130\",\"license\":\"Apache-2.0\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610692806100616000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c8063a2e089ca1161005b578063a2e089ca146100f1578063af640d0f14610104578063ebf0c71714610131578063f2fde38b1461013a57600080fd5b80631e526e451461008d5780635d325d71146100a9578063715018a6146100cc5780638da5cb5b146100d6575b600080fd5b61009660025481565b6040519081526020015b60405180910390f35b6100bc6100b7366004610465565b61014d565b60405190151581526020016100a0565b6100d4610225565b005b6000546040516001600160a01b0390911681526020016100a0565b6100d46100ff366004610568565b6102a2565b6003546101189067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020016100a0565b61009660015481565b6100d4610148366004610443565b61033d565b6040516bffffffffffffffffffffffff19606085901b166020820152600090819060340160408051601f198184030181529082905280516020909101206001546002546399e179d360e01b845291935073D184c103F7acc340847eEE82a0B909E3358bc28d926399e179d3926101cc929186918a918a906004016105ae565b60206040518083038186803b1580156101e457600080fd5b505af41580156101f8573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061021c9190610546565b95945050505050565b6000546001600160a01b031633146102585760405162461bcd60e51b815260040161024f90610611565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102cc5760405162461bcd60e51b815260040161024f90610611565b600183905560028290556003805467ffffffffffffffff191667ffffffffffffffff83169081179091556040805185815260208101859052908101919091527f490e1fae9b9d0241e69942b91c0ff8a4243f00f4a81da2a028514b151524429b9060600160405180910390a1505050565b6000546001600160a01b031633146103675760405162461bcd60e51b815260040161024f90610611565b6001600160a01b0381166103cc5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161024f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b80356001600160a01b038116811461043e57600080fd5b919050565b60006020828403121561045557600080fd5b61045e82610427565b9392505050565b60008060006060848603121561047a57600080fd5b61048384610427565b92506020808501359250604085013567ffffffffffffffff808211156104a857600080fd5b818701915087601f8301126104bc57600080fd5b8135818111156104ce576104ce610646565b8060051b604051601f19603f830116810181811085821117156104f3576104f3610646565b604052828152858101935084860182860187018c101561051257600080fd5b600095505b83861015610535578035855260019590950194938601938601610517565b508096505050505050509250925092565b60006020828403121561055857600080fd5b8151801515811461045e57600080fd5b60008060006060848603121561057d57600080fd5b8335925060208401359150604084013567ffffffffffffffff811681146105a357600080fd5b809150509250925092565b600060a082018783526020878185015286604085015285606085015260a0608085015281855180845260c086019150828701935060005b81811015610601578451835293830193918301916001016105e5565b50909a9950505050505050505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220c540be8efde24a7c5938a46f2794ada59b9cad3eea4541c69073b098cdb3883a64736f6c63430008060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c8063a2e089ca1161005b578063a2e089ca146100f1578063af640d0f14610104578063ebf0c71714610131578063f2fde38b1461013a57600080fd5b80631e526e451461008d5780635d325d71146100a9578063715018a6146100cc5780638da5cb5b146100d6575b600080fd5b61009660025481565b6040519081526020015b60405180910390f35b6100bc6100b7366004610465565b61014d565b60405190151581526020016100a0565b6100d4610225565b005b6000546040516001600160a01b0390911681526020016100a0565b6100d46100ff366004610568565b6102a2565b6003546101189067ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020016100a0565b61009660015481565b6100d4610148366004610443565b61033d565b6040516bffffffffffffffffffffffff19606085901b166020820152600090819060340160408051601f198184030181529082905280516020909101206001546002546399e179d360e01b845291935073__$8357ba4d74636aadcb00db704e14ab264e$__926399e179d3926101cc929186918a918a906004016105ae565b60206040518083038186803b1580156101e457600080fd5b505af41580156101f8573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061021c9190610546565b95945050505050565b6000546001600160a01b031633146102585760405162461bcd60e51b815260040161024f90610611565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102cc5760405162461bcd60e51b815260040161024f90610611565b600183905560028290556003805467ffffffffffffffff191667ffffffffffffffff83169081179091556040805185815260208101859052908101919091527f490e1fae9b9d0241e69942b91c0ff8a4243f00f4a81da2a028514b151524429b9060600160405180910390a1505050565b6000546001600160a01b031633146103675760405162461bcd60e51b815260040161024f90610611565b6001600160a01b0381166103cc5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161024f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b80356001600160a01b038116811461043e57600080fd5b919050565b60006020828403121561045557600080fd5b61045e82610427565b9392505050565b60008060006060848603121561047a57600080fd5b61048384610427565b92506020808501359250604085013567ffffffffffffffff808211156104a857600080fd5b818701915087601f8301126104bc57600080fd5b8135818111156104ce576104ce610646565b8060051b604051601f19603f830116810181811085821117156104f3576104f3610646565b604052828152858101935084860182860187018c101561051257600080fd5b600095505b83861015610535578035855260019590950194938601938601610517565b508096505050505050509250925092565b60006020828403121561055857600080fd5b8151801515811461045e57600080fd5b60008060006060848603121561057d57600080fd5b8335925060208401359150604084013567ffffffffffffffff811681146105a357600080fd5b809150509250925092565b600060a082018783526020878185015286604085015285606085015260a0608085015281855180845260c086019150828701935060005b81811015610601578451835293830193918301916001016105e5565b50909a9950505050505050505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220c540be8efde24a7c5938a46f2794ada59b9cad3eea4541c69073b098cdb3883a64736f6c63430008060033",
+  "libraries": {
+    "MerkleProof": "0xD184c103F7acc340847eEE82a0B909E3358bc28d"
+  },
+  "devdoc": {
+    "details": "Stores the validator set as a Merkle rootInherits `Ownable` to ensure it can only be callable by the instantiating contract account (which is the BeefyLightClient contract)",
+    "kind": "dev",
+    "methods": {
+      "checkValidatorInSet(address,uint256,bytes32[])": {
+        "params": {
+          "addr": "The address of the validator to check",
+          "pos": "The position of the validator to check, index starting at 0",
+          "proof": "Merkle proof required for validation of the address"
+        },
+        "returns": {
+          "_0": "Returns true if the validator is in the set"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      },
+      "update(bytes32,uint256,uint64)": {
+        "params": {
+          "_numOfValidators": "The new number of validators",
+          "_root": "The new root"
+        }
+      }
+    },
+    "title": "A contract storing state on the current validator set",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "checkValidatorInSet(address,uint256,bytes32[])": {
+        "notice": "Checks if a validators address is a member of the merkle tree"
+      },
+      "update(bytes32,uint256,uint64)": {
+        "notice": "Updates the validator registry and number of validators"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 375,
+        "contract": "@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol:ValidatorRegistry",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 7914,
+        "contract": "@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol:ValidatorRegistry",
+        "label": "root",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 7916,
+        "contract": "@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol:ValidatorRegistry",
+        "label": "numOfValidators",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 7918,
+        "contract": "@snowfork/snowbridge-contracts/contracts/ValidatorRegistry.sol:ValidatorRegistry",
+        "label": "id",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint64"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint64": {
+        "encoding": "inplace",
+        "label": "uint64",
+        "numberOfBytes": "8"
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "address": "0xD184c103F7acc340847eEE82a0B909E3358bc28d",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "leaf",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "proof",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "bool[]",
+          "name": "side",
+          "type": "bool[]"
+        }
+      ],
+      "name": "computeRootFromProofAndSide",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "leaf",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pos",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "width",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "proof",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "computeRootFromProofAtPosition",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "root",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "leaf",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pos",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "width",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "proof",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "verifyMerkleLeafAtPosition",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x755da116d0513d4b8187456a5727a2e8ac75ad219938582b894435a53a317e73",
+  "receipt": {
+    "to": null,
+    "from": "0xBe68fC2d8249eb60bfCf0e71D5A0d2F2e292c4eD",
+    "contractAddress": "0xD184c103F7acc340847eEE82a0B909E3358bc28d",
+    "transactionIndex": 0,
+    "gasUsed": "400227",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1b33b8047476cf2e8cbcb8fd9821a7447a109d2d04dc8479fc8f91fb653770bd",
+    "transactionHash": "0x755da116d0513d4b8187456a5727a2e8ac75ad219938582b894435a53a317e73",
+    "logs": [],
+    "blockNumber": 3,
+    "cumulativeGasUsed": "400227",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "4c5f7479fbcbb8f587221b3596eb14de",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"leaf\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32[]\",\"name\":\"proof\",\"type\":\"bytes32[]\"},{\"internalType\":\"bool[]\",\"name\":\"side\",\"type\":\"bool[]\"}],\"name\":\"computeRootFromProofAndSide\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"leaf\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"pos\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"width\",\"type\":\"uint256\"},{\"internalType\":\"bytes32[]\",\"name\":\"proof\",\"type\":\"bytes32[]\"}],\"name\":\"computeRootFromProofAtPosition\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"root\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"leaf\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"pos\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"width\",\"type\":\"uint256\"},{\"internalType\":\"bytes32[]\",\"name\":\"proof\",\"type\":\"bytes32[]\"}],\"name\":\"verifyMerkleLeafAtPosition\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"computeRootFromProofAndSide(bytes32,bytes32[],bool[])\":{\"params\":{\"leaf\":\"the leaf we want to prove\",\"proof\":\"an array of nodes to be hashed in order that they should be hashed\",\"side\":\"an array of booleans signalling whether the corresponding node should be hashed on the left side or the right side of the current hash\"}},\"verifyMerkleLeafAtPosition(bytes32,bytes32,uint256,uint256,bytes32[])\":{\"params\":{\"leaf\":\"the leaf which needs to be proven\",\"pos\":\"the position of the leaf, index starting with 0\",\"proof\":\"the array of proofs to help verify the leaf's membership, ordered from leaf to root\",\"root\":\"the root of the merkle tree\",\"width\":\"the width or number of leaves in the tree\"},\"returns\":{\"_0\":\"a boolean value representing the success or failure of the operation\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"computeRootFromProofAndSide(bytes32,bytes32[],bool[])\":{\"notice\":\"Compute the root of a MMR from a leaf and proof\"},\"verifyMerkleLeafAtPosition(bytes32,bytes32,uint256,uint256,bytes32[])\":{\"notice\":\"Verify that a specific leaf element is part of the Merkle Tree at a specific position in the tree\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@snowfork/snowbridge-contracts/contracts/utils/MerkleProof.sol\":\"MerkleProof\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@snowfork/snowbridge-contracts/contracts/utils/MerkleProof.sol\":{\"content\":\"// \\\"SPDX-License-Identifier: Apache-2.0\\\"\\npragma solidity ^0.8.5;\\n\\nlibrary MerkleProof {\\n    /**\\n     * @notice Verify that a specific leaf element is part of the Merkle Tree at a specific position in the tree\\n     *\\n     * @param root the root of the merkle tree\\n     * @param leaf the leaf which needs to be proven\\n     * @param pos the position of the leaf, index starting with 0\\n     * @param width the width or number of leaves in the tree\\n     * @param proof the array of proofs to help verify the leaf's membership, ordered from leaf to root\\n     * @return a boolean value representing the success or failure of the operation\\n     */\\n    function verifyMerkleLeafAtPosition(\\n        bytes32 root,\\n        bytes32 leaf,\\n        uint256 pos,\\n        uint256 width,\\n        bytes32[] calldata proof\\n    ) public pure returns (bool) {\\n        bytes32 computedHash = computeRootFromProofAtPosition(\\n            leaf,\\n            pos,\\n            width,\\n            proof\\n        );\\n\\n        return computedHash == root;\\n    }\\n\\n    /**\\n     * @notice Compute the root of a MMR from a leaf and proof\\n     *\\n     * @param leaf the leaf we want to prove\\n     * @param proof an array of nodes to be hashed in order that they should be hashed\\n     * @param side an array of booleans signalling whether the corresponding node should be hashed on the left side or\\n     * the right side of the current hash\\n     */\\n    function computeRootFromProofAndSide(\\n        bytes32 leaf,\\n        bytes32[] calldata proof,\\n        bool[] calldata side\\n    ) public pure returns (bytes32) {\\n        bytes32 node = leaf;\\n        for (uint256 i = 0; i < proof.length; i++) {\\n            if (side[i]) {\\n                node = keccak256(abi.encodePacked(proof[i], node));\\n            } else {\\n                node = keccak256(abi.encodePacked(node, proof[i]));\\n            }\\n        }\\n        return node;\\n    }\\n\\n    function computeRootFromProofAtPosition(\\n        bytes32 leaf,\\n        uint256 pos,\\n        uint256 width,\\n        bytes32[] calldata proof\\n    ) public pure returns (bytes32) {\\n        bytes32 computedHash = leaf;\\n\\n        require(pos < width, \\\"Merkle position is too high\\\");\\n\\n        uint256 i = 0;\\n        for (uint256 height = 0; width > 1; height++) {\\n            bool computedHashLeft = pos % 2 == 0;\\n\\n            // check if at rightmost branch and whether the computedHash is left\\n            if (pos + 1 == width && computedHashLeft) {\\n                // there is no sibling and also no element in proofs, so we just go up one layer in the tree\\n                pos /= 2;\\n                width = ((width - 1) / 2) + 1;\\n                continue;\\n            }\\n\\n            require(i < proof.length, \\\"Merkle proof is too short\\\");\\n\\n            bytes32 proofElement = proof[i];\\n\\n            if (computedHashLeft) {\\n                computedHash = keccak256(\\n                    abi.encodePacked(computedHash, proofElement)\\n                );\\n            } else {\\n                computedHash = keccak256(\\n                    abi.encodePacked(proofElement, computedHash)\\n                );\\n            }\\n\\n            pos /= 2;\\n            width = ((width - 1) / 2) + 1;\\n            i++;\\n        }\\n\\n        return computedHash;\\n    }\\n}\\n\",\"keccak256\":\"0xd2adb5e9f48b705bf33c8151ba8f818ee2cd04047b2b0d8cd2c5f5dbdf479130\",\"license\":\"Apache-2.0\"}},\"version\":1}",
+  "bytecode": "0x61064761003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361061004b5760003560e01c806340752949146100505780636a1b27001461007657806399e179d314610089575b600080fd5b61006361005e36600461050d565b6100ac565b6040519081526020015b60405180910390f35b610063610084366004610429565b6102a2565b61009c6100973660046104a3565b610396565b604051901515815260200161006d565b6000858486106101035760405162461bcd60e51b815260206004820152601b60248201527f4d65726b6c6520706f736974696f6e20697320746f6f2068696768000000000060448201526064015b60405180910390fd5b6000805b600187111561029557600061011d60028a6105bb565b1590508761012c8a600161055d565b1480156101365750805b156101725761014660028a610575565b9850600261015560018a610589565b61015f9190610575565b61016a90600161055d565b975050610283565b8583106101c15760405162461bcd60e51b815260206004820152601960248201527f4d65726b6c652070726f6f6620697320746f6f2073686f72740000000000000060448201526064016100fa565b60008787858181106101d5576101d56105fb565b9050602002013590508115610215576040805160208101879052908101829052606001604051602081830303815290604052805190602001209450610242565b60408051602081018390529081018690526060016040516020818303038152906040528051906020012094505b61024d60028b610575565b9950600261025c60018b610589565b6102669190610575565b61027190600161055d565b98508361027d816105a0565b94505050505b8061028d816105a0565b915050610107565b5090979650505050505050565b600085815b8581101561038b578484828181106102c1576102c16105fb565b90506020020160208101906102d69190610400565b1561032c578686828181106102ed576102ed6105fb565b905060200201358260405160200161030f929190918252602082015260400190565b604051602081830303815290604052805190602001209150610379565b8187878381811061033f5761033f6105fb565b90506020020135604051602001610360929190918252602082015260400190565b6040516020818303038152906040528051906020012091505b80610383816105a0565b9150506102a7565b509695505050505050565b6000806103a687878787876100ac565b909714979650505050505050565b60008083601f8401126103c657600080fd5b50813567ffffffffffffffff8111156103de57600080fd5b6020830191508360208260051b85010111156103f957600080fd5b9250929050565b60006020828403121561041257600080fd5b8135801515811461042257600080fd5b9392505050565b60008060008060006060868803121561044157600080fd5b85359450602086013567ffffffffffffffff8082111561046057600080fd5b61046c89838a016103b4565b9096509450604088013591508082111561048557600080fd5b50610492888289016103b4565b969995985093965092949392505050565b60008060008060008060a087890312156104bc57600080fd5b86359550602087013594506040870135935060608701359250608087013567ffffffffffffffff8111156104ef57600080fd5b6104fb89828a016103b4565b979a9699509497509295939492505050565b60008060008060006080868803121561052557600080fd5b853594506020860135935060408601359250606086013567ffffffffffffffff81111561055157600080fd5b610492888289016103b4565b60008219821115610570576105706105cf565b500190565b600082610584576105846105e5565b500490565b60008282101561059b5761059b6105cf565b500390565b60006000198214156105b4576105b46105cf565b5060010190565b6000826105ca576105ca6105e5565b500690565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052601260045260246000fd5b634e487b7160e01b600052603260045260246000fdfea264697066735822122007aeff722c2a257f50ed122cdb193f0ae2a459cf6270e356a06ce53fc0b12cca64736f6c63430008060033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361061004b5760003560e01c806340752949146100505780636a1b27001461007657806399e179d314610089575b600080fd5b61006361005e36600461050d565b6100ac565b6040519081526020015b60405180910390f35b610063610084366004610429565b6102a2565b61009c6100973660046104a3565b610396565b604051901515815260200161006d565b6000858486106101035760405162461bcd60e51b815260206004820152601b60248201527f4d65726b6c6520706f736974696f6e20697320746f6f2068696768000000000060448201526064015b60405180910390fd5b6000805b600187111561029557600061011d60028a6105bb565b1590508761012c8a600161055d565b1480156101365750805b156101725761014660028a610575565b9850600261015560018a610589565b61015f9190610575565b61016a90600161055d565b975050610283565b8583106101c15760405162461bcd60e51b815260206004820152601960248201527f4d65726b6c652070726f6f6620697320746f6f2073686f72740000000000000060448201526064016100fa565b60008787858181106101d5576101d56105fb565b9050602002013590508115610215576040805160208101879052908101829052606001604051602081830303815290604052805190602001209450610242565b60408051602081018390529081018690526060016040516020818303038152906040528051906020012094505b61024d60028b610575565b9950600261025c60018b610589565b6102669190610575565b61027190600161055d565b98508361027d816105a0565b94505050505b8061028d816105a0565b915050610107565b5090979650505050505050565b600085815b8581101561038b578484828181106102c1576102c16105fb565b90506020020160208101906102d69190610400565b1561032c578686828181106102ed576102ed6105fb565b905060200201358260405160200161030f929190918252602082015260400190565b604051602081830303815290604052805190602001209150610379565b8187878381811061033f5761033f6105fb565b90506020020135604051602001610360929190918252602082015260400190565b6040516020818303038152906040528051906020012091505b80610383816105a0565b9150506102a7565b509695505050505050565b6000806103a687878787876100ac565b909714979650505050505050565b60008083601f8401126103c657600080fd5b50813567ffffffffffffffff8111156103de57600080fd5b6020830191508360208260051b85010111156103f957600080fd5b9250929050565b60006020828403121561041257600080fd5b8135801515811461042257600080fd5b9392505050565b60008060008060006060868803121561044157600080fd5b85359450602086013567ffffffffffffffff8082111561046057600080fd5b61046c89838a016103b4565b9096509450604088013591508082111561048557600080fd5b50610492888289016103b4565b969995985093965092949392505050565b60008060008060008060a087890312156104bc57600080fd5b86359550602087013594506040870135935060608701359250608087013567ffffffffffffffff8111156104ef57600080fd5b6104fb89828a016103b4565b979a9699509497509295939492505050565b60008060008060006080868803121561052557600080fd5b853594506020860135935060408601359250606086013567ffffffffffffffff81111561055157600080fd5b610492888289016103b4565b60008219821115610570576105706105cf565b500190565b600082610584576105846105e5565b500490565b60008282101561059b5761059b6105cf565b500390565b60006000198214156105b4576105b46105cf565b5060010190565b6000826105ca576105ca6105e5565b500690565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052601260045260246000fd5b634e487b7160e01b600052603260045260246000fdfea264697066735822122007aeff722c2a257f50ed122cdb193f0ae2a459cf6270e356a06ce53fc0b12cca64736f6c63430008060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "computeRootFromProofAndSide(bytes32,bytes32[],bool[])": {
+        "params": {
+          "leaf": "the leaf we want to prove",
+          "proof": "an array of nodes to be hashed in order that they should be hashed",
+          "side": "an array of booleans signalling whether the corresponding node should be hashed on the left side or the right side of the current hash"
+        }
+      },
+      "verifyMerkleLeafAtPosition(bytes32,bytes32,uint256,uint256,bytes32[])": {
+        "params": {
+          "leaf": "the leaf which needs to be proven",
+          "pos": "the position of the leaf, index starting with 0",
+          "proof": "the array of proofs to help verify the leaf's membership, ordered from leaf to root",
+          "root": "the root of the merkle tree",
+          "width": "the width or number of leaves in the tree"
+        },
+        "returns": {
+          "_0": "a boolean value representing the success or failure of the operation"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "computeRootFromProofAndSide(bytes32,bytes32[],bool[])": {
+        "notice": "Compute the root of a MMR from a leaf and proof"
+      },
+      "verifyMerkleLeafAtPosition(bytes32,bytes32,uint256,uint256,bytes32[])": {
+        "notice": "Verify that a specific leaf element is part of the Merkle Tree at a specific position in the tree"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
