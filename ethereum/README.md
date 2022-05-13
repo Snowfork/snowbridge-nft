@@ -11,25 +11,25 @@ Requirements:
 
 Install dependencies with yarn:
 
-```bash
-yarn install
+```console
+$ yarn install
 ```
 
 Create an `.envrc` file using [.envrc-example](.envrc-example) as a template. Note that deploying to ropsten network requires setting the INFURA_PROJECT_ID and ROPSTEN_PRIVATE_KEY environment variables.
 
 Example:
 
-```bash
-cp .envrc-example .envrc
-direnv allow
+```console
+$ cp .envrc-example .envrc
+$ direnv allow
 ```
 
 ## Testing
 
 Run tests on the hardhat network:
 
-```bash
-yarn test
+```console
+$ yarn test
 ```
 
 ## Deployment
@@ -38,6 +38,6 @@ yarn test
 
 Example: Run a local hardhat instance with deployments
 
-```
-yarn hardhat node
+```console
+$ yarn hardhat node
 ```
